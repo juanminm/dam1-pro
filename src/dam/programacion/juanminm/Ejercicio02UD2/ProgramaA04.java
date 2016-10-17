@@ -2,6 +2,7 @@
  * 4. Escribe un programa que solicite  dos números reales y los escriba
  * ordenados de menor a mayor
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -9,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A04 {
+public class ProgramaA04 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double numero1, numero2;

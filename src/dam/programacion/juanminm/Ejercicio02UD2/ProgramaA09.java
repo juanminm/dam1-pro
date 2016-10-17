@@ -2,6 +2,7 @@
  * 9. Escribe un programa que solicite tres valores enteros con el día, mes y
  * año de una fecha e indique si se trata de valores válidos para una fecha.
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ import java.util.Scanner;
  *
  * @author mati
  */
-public class Ejercicio02UD2_A09 {
+public class ProgramaA09 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int dia, mes, año;

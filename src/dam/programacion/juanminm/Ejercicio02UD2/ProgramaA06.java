@@ -3,6 +3,7 @@
  * dinero en euros. El programa debe mostrar por pantalla la mínima cantidad de
  * monedas de cada tipo en que se debe devolver la cantidad de dinero indicada.
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -10,7 +11,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A06 {
+public class ProgramaA06 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int centimos;

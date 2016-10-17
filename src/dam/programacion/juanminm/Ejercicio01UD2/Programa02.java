@@ -6,10 +6,9 @@
  * una sentencia para escribir el nombre, otra para escribir tu primer apellido 
  * y otra para escribir tu segundo apellido.
  */
+package dam.programacion.juanminm.Ejercicio01UD2;
 
-
-
-public class EjercicioU2_02 {
+public class Programa02 {
     public static void main(String[] args) {
         System.out.print("Juan Miguel ");
         System.out.print("Navarro ");

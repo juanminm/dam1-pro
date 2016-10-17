@@ -2,6 +2,7 @@
  * Escribe un programa para calcular la edad de una persona solicitando la
  * fecha actual y la fecha de su nacimiento.
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -9,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A08 {
+public class ProgramaA08 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         boolean fallo = false;

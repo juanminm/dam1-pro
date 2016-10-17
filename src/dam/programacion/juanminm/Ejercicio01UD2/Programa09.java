@@ -9,9 +9,9 @@
  *     c) 20 * 10 / 2 -20 /5 * 3
  *     d) 15/10*2 + 3 / 4 * 8 
  */
+package dam.programacion.juanminm.Ejercicio01UD2;
 
-
-public class EjercicioU2_09 {
+public class Programa09 {
     public static void main(String[] args) {
         System.out.println("25 + 20 - 15 = " + (25 + 20 - 15));
         System.out.println("20 * 10 + 15 * 10 = " + (20 * 10 + 15 * 10));

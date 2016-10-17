@@ -7,9 +7,9 @@
  * para hacienda. Escribe los mensajes apropiados para entender todos los
  * cálculos. 
  */
+package dam.programacion.juanminm.Ejercicio01UD2;
 
-
-public class EjercicioU2_08 {
+public class Programa08 {
   public static void main(String[] args) {
     System.out.println("Cantidad depositada: " + 2000f);
     System.out.println("Interes anual: 2.75%");

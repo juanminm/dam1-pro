@@ -9,6 +9,7 @@
  *    Desde 7 y menor que 9 -------> NOT. 
  *    Desde 9 hasta 10 ------------> SOB.
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -16,7 +17,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A05 {
+public class ProgramaA05 {
     public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
         float nota;

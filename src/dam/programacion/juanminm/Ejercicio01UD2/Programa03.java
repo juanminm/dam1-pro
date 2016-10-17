@@ -8,9 +8,9 @@
  * línea escribirá la nota fin al de la asignatura. Escribe lo que sea texto 
  * como un texto entre comillas dobles y lo que sea número como un número. 
  */
+package dam.programacion.juanminm.Ejercicio01UD2;
 
-
-public class EjercicioU2_03 {
+public class Programa03 {
     public static void main(String[] args) {
 
     System.out.println("Programación");

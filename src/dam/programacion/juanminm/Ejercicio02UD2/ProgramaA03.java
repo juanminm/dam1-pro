@@ -3,6 +3,7 @@
  * el programa escribirá un mensaje por pantalla que indique si se trata de un
  * número par o de un número impar
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -10,7 +11,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A03 {
+public class ProgramaA03 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int numero;

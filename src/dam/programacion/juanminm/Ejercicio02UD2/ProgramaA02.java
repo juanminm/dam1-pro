@@ -2,6 +2,7 @@
  * 2. Escribe un programa que solicite la edad de una persona y muestre un
  * mensaje por pantalla que indique si es mayor o menor que 2
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -9,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A02 {
+public class ProgramaA02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int edad;

@@ -4,6 +4,7 @@
  * de 65 años y un 25% los menores de 18 años si los padres no son socios y 35%
  * si los padres son socios.
  */
+package dam.programacion.juanminm.Ejercicio02UD2;
 
 /**
  *
@@ -11,7 +12,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio02UD2_A07 {
+public class ProgramaA07 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int edad;
