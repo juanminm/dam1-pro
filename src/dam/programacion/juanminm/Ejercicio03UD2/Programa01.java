@@ -18,9 +18,9 @@ public class Programa01 {
         Scanner scan = new Scanner(System.in);
         int operando1, operando2;
         
-        System.out.println("Introduzca el primer operando a sumar: ");
+        System.out.print("Introduzca el primer operando a sumar: ");
         operando1 = scan.nextInt();
-        System.out.println("Introduzca el segundo operando a sumar: ");
+        System.out.print("Introduzca el segundo operando a sumar: ");
         operando2 = scan.nextInt();
         
         System.out.println("La suma de ambos números es: " + suma(operando1,
