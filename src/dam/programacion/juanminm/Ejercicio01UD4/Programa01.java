@@ -1,7 +1,7 @@
 /*
  * 1.- Escribe un método que devuelva la suma de dos enteros.
  */
-package dam.programacion.juanminm.Ejercicio03UD2;
+package dam.programacion.juanminm.Ejercicio01UD4;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Programa01 {
     static int suma(int operando1, int operando2) {
-        return operando1 + operando2;        
+        return operando1 + operando2;
     }
     
     public static void main(String[] args) {
