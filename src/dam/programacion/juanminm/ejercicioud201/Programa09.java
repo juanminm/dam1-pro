@@ -1,13 +1,13 @@
 /*
  * Ejercicio 9.
- * 
+ *
  * Dadas las siguientes expresiones aritméticas, calcula cuál es el resultado
  * de evaluarlas:
- * 
+ *
  *     a) 25 + 20 -15
  *     b) 20 * 10 +15 * 10
  *     c) 20 * 10 / 2 -20 /5 * 3
- *     d) 15/10*2 + 3 / 4 * 8 
+ *     d) 15/10*2 + 3 / 4 * 8
  */
 package dam.programacion.juanminm.ejercicioud201;
 

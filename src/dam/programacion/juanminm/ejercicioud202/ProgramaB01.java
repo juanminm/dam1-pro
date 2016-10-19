@@ -10,13 +10,13 @@ package dam.programacion.juanminm.ejercicioud202;
 public class ProgramaB01 {
     public static void main(String[] args) {
         for (int i = 48; i<=100; i +=2) {
-            
+
             if (i < 100) {
                 System.out.print(i + ", ");
             } else {
                 System.out.println(i);
             }
-            
+
         }
     }
 }

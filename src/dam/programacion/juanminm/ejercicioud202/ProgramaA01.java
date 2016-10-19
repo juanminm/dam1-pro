@@ -16,7 +16,7 @@ public class ProgramaA01 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Introduzca su edad: ");
         edad = scan.nextInt();
-        
+
         if (edad >= 18) {
             System.out.println("Eres mayor de edad.");
         } else {

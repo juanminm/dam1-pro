@@ -1,12 +1,12 @@
 /*
  * 5. Escribe un programa que permita introducir una calificación (entre cero y
- * diez) e imprima su equivalente alfabético, según la siguiente tabla. 
+ * diez) e imprima su equivalente alfabético, según la siguiente tabla.
  *
- *    De 3 ------------------------> M.D. 
- *    Desde 3 y menor que 5 -------> INS. 
- *    Desde 5 y menor que 6 -------> SUF. 
- *    Desde 6 y menor que 7 -------> BIEN 
- *    Desde 7 y menor que 9 -------> NOT. 
+ *    De 3 ------------------------> M.D.
+ *    Desde 3 y menor que 5 -------> INS.
+ *    Desde 5 y menor que 6 -------> SUF.
+ *    Desde 6 y menor que 7 -------> BIEN
+ *    Desde 7 y menor que 9 -------> NOT.
  *    Desde 9 hasta 10 ------------> SOB.
  */
 package dam.programacion.juanminm.ejercicioud202;
@@ -21,7 +21,7 @@ public class ProgramaA05 {
     public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
         float nota;
-        
+
         System.out.print("Introduzca la nota: ");
         nota = scan.nextFloat();
         if (nota < 4) {

@@ -10,11 +10,11 @@ package dam.programacion.juanminm.ejercicioud202;
 public class ProgramaB02 {
     public static void main(String[] args) {
         int suma = 0;
-        
+
         for (int i = 1; i <= 1000; i++) {
             suma += i;
         }
-        
+
         System.out.println("La suma de los numeros entre 1 y 1000 es " + suma);
     }
 }

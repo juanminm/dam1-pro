@@ -11,7 +11,7 @@ package dam.programacion.juanminm.ejercicioud202;
 public class ProgramaB03 {
     public static void main(String[] args) {
         int impares = 0, pares = 0, multiplos5 = 0;
-        
+
         System.out.println("Numeros impares entre el 1 y el 99.");
         for (int i = 1; i <= 99; i += 2) {
             if (impares == 0) {
@@ -19,7 +19,7 @@ public class ProgramaB03 {
             } else {
                 System.out.print(", " + i);
             }
-            
+
             impares++;
         }
 
@@ -31,10 +31,10 @@ public class ProgramaB03 {
             } else {
                 System.out.print(", " + i);
             }
-            
+
             pares++;
         }
-        
+
         System.out.println("\nLa cantidad de pares es " + pares);
         System.out.println("\nMultiplos de 5 del 1 al 99.");
         for (int i = 1; i <= 99; i += 1) {

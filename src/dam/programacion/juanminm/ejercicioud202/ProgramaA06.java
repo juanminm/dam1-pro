@@ -18,10 +18,10 @@ public class ProgramaA06 {
         int monedas2Euro = 0, monedas1Euro = 0, monedas50Cent = 0,
                 monedas20Cent = 0, monedas10Cent = 0, monedas5Cent = 0,
                 monedas2Cent = 0, monedas1Cent = 0;
-        
+
         System.out.print("Introduzca una cantidad en euros: ");
         centimos = (int)(scan.nextDouble()*100);
-        
+
         do {
             if (centimos >= 200) {
                 monedas2Euro = centimos / 200;
@@ -49,7 +49,7 @@ public class ProgramaA06 {
                 centimos = 0;
             }
         } while (centimos != 0);
-        
+
         System.out.println("Monedas de 2€:      " + monedas2Euro);
         System.out.println("Monedas de 1€:      " + monedas1Euro);
         System.out.println("Monedas de 50 cent: " + monedas50Cent);

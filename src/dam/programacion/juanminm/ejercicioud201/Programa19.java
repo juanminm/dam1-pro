@@ -1,14 +1,14 @@
 /*
  * Ejercicio 19
- * 
- * Escribe un programa para calcular el consumo medio de un automóvil. Para 
+ *
+ * Escribe un programa para calcular el consumo medio de un automóvil. Para
  * ello el programa debe solicitar información sobre las tres últimas veces que
  * se repostó combustible. De la primera solicitará el precio del litro del
  * combustible, el total pagado en llenar el depósito y el número de kilómetros
  * que marcaba el cuentakilómetros. De la segunda vez sólo solicitará el precio
  * del litro de combustible y el total pagado en llenar el depósito, y de la
  * tercera vez, solicitará el valor que indicaba el cuentakilómetros. Con estos
- * datos debe calcular el consumo por cada 100 km y el coste por kilómetro. 
+ * datos debe calcular el consumo por cada 100 km y el coste por kilómetro.
  */
 package dam.programacion.juanminm.ejercicioud201;
 
@@ -50,7 +50,7 @@ public class Programa19 {
 
         consumo100KM = (totalPrecio / precioLitro / kilometrosRecorridos +
                         totalPrecio2 / precioLitro2 / kilometrosRecorridos3) / 2 * 100;
-        
+
         costeKilometro = (totalPrecio / kilometrosRecorridos + precioLitro2 /
                         kilometrosRecorridos3) / 2;
 

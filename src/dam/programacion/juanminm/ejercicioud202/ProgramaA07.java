@@ -18,14 +18,14 @@ public class ProgramaA07 {
         int edad;
         double cuota = 500;
         String padresSocios;
-        
+
         System.out.print("Introduzca su edad: ");
         edad = scan.nextInt();
-        
+
         if (edad < 18) {
             System.out.print("Vemos que eres menor de edad. ¿Son tus padres socios? (Sí/No): ");
             padresSocios = scan.next();
-            
+
             if (padresSocios.equalsIgnoreCase("Sí")) {
                 cuota = cuota * 65/100;
             } else {
@@ -34,7 +34,7 @@ public class ProgramaA07 {
         } else if (edad >= 65) {
             cuota = cuota * 50/100;
         }
-        
+
         System.out.println("La cuota a abonar al club es de: " + cuota + "€");
     }
 }

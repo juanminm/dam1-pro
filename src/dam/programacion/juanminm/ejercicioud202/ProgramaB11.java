@@ -1,7 +1,7 @@
 /*
  * 11. Escribe un programa que juegue con el usuario a adivinar un número. El
  * ordenador debe generar un número entre 1 y 100 y el usuario tiene que
- * intentar adivinarlo. Para ello, cada vez que el usuario introduce un valor, 
+ * intentar adivinarlo. Para ello, cada vez que el usuario introduce un valor,
  * el ordenador debe decirle al usuario si el número que tiene que adivinar es
  * mayor o menor que el que ha introducido. Cuando consiga adivinarlo debe
  * indicárselo y visualizar el número de veces que el usuario ha intentado
@@ -23,14 +23,14 @@ public class ProgramaB11 {
         boolean esNumero;
         int i, intentos = 0;
         int numero = (int) (Math.random() * 100 + 1);
-        
+
         System.out.println("He generado un número entre el 1 y el 100. Intenta "
                 + "adivinarlo.");
 
         do {
             System.out.print("Introduce el número: ");
             userInput = scan.next();
-           
+
             try {
                 i = Integer.parseInt(userInput);
                 esNumero = true;
@@ -39,7 +39,7 @@ public class ProgramaB11 {
                 i = 0;
                 esNumero = false;
             }
-           
+
             if (esNumero) {
                 if (i < numero) {
                     System.out.println("El número introducido es pequeño.");

@@ -1,13 +1,13 @@
 /*
  * Ejercicio 10.
- * 
- * Dadas las siguientes expresiones aritméticas, calcula cuál es el resultado 
+ *
+ * Dadas las siguientes expresiones aritméticas, calcula cuál es el resultado
  * de evaluarlas. Supón que las variables a y b que aparecen son del tipo int y
  * a tiene el valor de 2 y b tiene el valor de 4.
- * 
- *  a) –a + 5 % b – a * a 
- *  b) 5 + 3 % 7 * b * a – b % a 
- *  c) (a+1) * (b + 1) – b / a 
+ *
+ *  a) –a + 5 % b – a * a
+ *  b) 5 + 3 % 7 * b * a – b % a
+ *  c) (a+1) * (b + 1) – b / a
  */
 package dam.programacion.juanminm.ejercicioud201;
 

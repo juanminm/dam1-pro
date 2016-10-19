@@ -16,12 +16,12 @@ public class ProgramaB07 {
         Scanner s = new Scanner(System.in);
         int a, b;
         double resultado = 1;
-        
+
         System.out.print("Introduzca el número base: ");
         a = s.nextInt();
         System.out.print("Introduzca la potencia: ");
         b = s.nextInt();
-        
+
         if (a == 0 && b <= 0) {
             System.out.println("ERR: Indefinido.");
         } else {
@@ -36,7 +36,7 @@ public class ProgramaB07 {
                     resultado *= (double) a;
                 }
             }
-            
+
             System.out.println("Resultado es " + resultado);
         }
     }

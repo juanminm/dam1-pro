@@ -14,10 +14,10 @@ public class ProgramaA02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int edad;
-        
+
         System.out.println("Introduzca su edad: ");
         edad = scan.nextInt();
-        
+
         if (edad >= 25) {
             System.out.println("Eres mayor de 25 años.");
         } else {

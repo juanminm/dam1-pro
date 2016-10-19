@@ -15,6 +15,6 @@ public class ProgramaB06 {
                 System.out.println(x + " x " + y + " = " + (x*y));
             }
             System.out.println();
-        }        
+        }
     }
 }

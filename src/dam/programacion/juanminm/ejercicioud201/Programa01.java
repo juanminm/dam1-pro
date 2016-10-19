@@ -1,6 +1,6 @@
 /*
  * Ejercicio 1.
- * 
+ *
  * Escribir un programa que escriba en la pantalla tu nombre completo en
  * una línea y en la línea siguiente tu fecha de nacimiento.
  */

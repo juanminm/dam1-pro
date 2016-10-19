@@ -14,12 +14,12 @@ public class ProgramaA04 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double numero1, numero2;
-        
+
         System.out.print("Introduzca el primer numero: ");
         numero1 = scan.nextDouble();
         System.out.print("Introduzca el segundo numero: ");
         numero2 = scan.nextDouble();
-        
+
         if (numero1 >= numero2) {
             System.out.println(numero1 + ", " + numero2);
         } else {

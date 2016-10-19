@@ -16,10 +16,10 @@ public class ProgramaA09 {
         int dia, mes, año;
         boolean error = true;
         String errmsg = null;
-        
+
         System.out.print("Año: ");
         año = scan.nextInt();
-        
+
         System.out.print("Mes: ");
         mes = scan.nextInt();
 
@@ -52,7 +52,7 @@ public class ProgramaA09 {
         } else {
             error = false;
         }
-        
+
         if (error) {
             System.out.println("ERROR - Fecha introdicida incorrecta: "
                     + errmsg);

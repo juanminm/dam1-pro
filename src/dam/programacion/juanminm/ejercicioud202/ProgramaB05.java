@@ -20,7 +20,7 @@ public class ProgramaB05 {
             } else {
                 System.out.print(i + ", ");
             }
-            
+
             if (i % 2 == 0) {
                 pares++;
                 sumaPares += i;
@@ -28,13 +28,13 @@ public class ProgramaB05 {
                 impares++;
                 sumaImpares += i;
             }
-            
+
             if (i % 4 == 0 && i % 7 == 0) {
                 multiplos4y7++;
                 sumaMultiplos4y7 += i;
             }
         }
-        
+
         System.out.println("\nHay " + pares + " números pares cuya suma es " + sumaPares);
         System.out.println("Hay " + impares + " números impares cuya suma es " + sumaImpares);
         System.out.println("Hay " + multiplos4y7 + " números multipos de 4 y de 7 cuya suma es " + sumaMultiplos4y7);

@@ -21,26 +21,26 @@ public class ProgramaA08 {
         int diaNacimiento = 0;
         int mesNacimiento = 0;
         int añoNacimiento = 0;
-        
+
         int edad;
-        
+
         System.out.println("Introduzca la fecha de hoy. ");
-        
-        /* 
+
+        /*
          * Comprobación de que el año es valido. Se asume que una persona no
          * vive más de 150 años.
          */
         do {
             System.out.print("Año: ");
             añoActual = scan.nextInt();
-            
+
             if (añoActual <= 1850) {
                 System.out.println("No puedes introducir fechas menores que "
                         + "1850.");
             }
-            
+
         } while (añoActual <= 1850);
-        
+
         do {
             System.out.print("Mes: ");
             mesActual = scan.nextInt();
@@ -50,12 +50,12 @@ public class ProgramaA08 {
             }
 
         } while (mesActual < 1 || mesActual > 12);
-            
-        /* 
+
+        /*
          * Validación de dia, solo pueden ser de 1 a 31 independiente del
          * año.
          *
-         * Se asume que la translación de la Tierra alrededor del Sol es la 
+         * Se asume que la translación de la Tierra alrededor del Sol es la
          * misma que cuando se creo este programa y que no ha surgido ninguna
          * variación en la orbita por ningun objeto másivo que haya pasado por
          * el sistema Solar.
@@ -63,7 +63,7 @@ public class ProgramaA08 {
         do {
             System.out.print("Dia: ");
             diaActual = scan.nextInt();
-            
+
             if (mesActual == 2) {
                 if ((añoActual % 4 == 0 && añoActual % 100 != 0 || añoActual % 400 == 0)
                         && (diaActual < 1 || diaActual > 29)) {
@@ -78,7 +78,7 @@ public class ProgramaA08 {
                     fallo = true;
                 } else if (diaActual < 1 || diaActual > 28) {
                     /*
-                     * Valída el valor del dia para el mes de febrero en un año 
+                     * Valída el valor del dia para el mes de febrero en un año
                      * no bisieto.
                      */
                     System.out.println("El día introducido no es el correcto. "
@@ -91,7 +91,7 @@ public class ProgramaA08 {
                     || mesActual > 7 && mesActual % 2 == 1)
                     && (mesActual < 1 || mesActual > 30)) {
                 /*
-                 * Valída para los meses que terminan en el dia 30. De 
+                 * Valída para los meses que terminan en el dia 30. De
                  * enero a julio el mes es un número par. De agosto a
                  * diciembre, el mes es un numero impar.
                  */
@@ -101,7 +101,7 @@ public class ProgramaA08 {
                     || mesActual > 7 && mesActual % 2 == 0)
                     && (mesActual < 1 || mesActual > 31)) {
                 /*
-                 * Valída para los meses que terminan en el dia 31. De 
+                 * Valída para los meses que terminan en el dia 31. De
                  * enero a julio el mes es un número impar. De agosto a
                  * diciembre, el mes es un numero par.
                  */
@@ -111,25 +111,25 @@ public class ProgramaA08 {
             } else {
                 // El dia introducido es correcto.
                 fallo = false;
-            }   
+            }
         } while (diaActual < 1 || diaActual > 31 || fallo);
-        
+
         /*
-         * Repetición de lo mismo pero para el año de nacimiento. Sería más 
+         * Repetición de lo mismo pero para el año de nacimiento. Sería más
          * rápido usando una función para la verificación de fechas.
          */
         System.out.println("Introduzca la fecha de tu nacimiento: ");
         do {
             System.out.print("Año: ");
             añoNacimiento = scan.nextInt();
-            
+
             if (añoNacimiento <= 1850) {
                 System.out.println("No puedes introducir fechas menores que "
                         + "1850.");
             }
-            
+
         } while (añoActual <= 1850);
-        
+
         do {
             System.out.print("Mes: ");
             mesNacimiento = scan.nextInt();
@@ -139,11 +139,11 @@ public class ProgramaA08 {
             }
 
         } while (mesNacimiento < 1 || mesNacimiento > 12);
-            
+
         do {
             System.out.print("Dia: ");
             diaNacimiento = scan.nextInt();
-            
+
             if (mesNacimiento == 2) {
                 if ((añoNacimiento % 4 == 0 && añoNacimiento % 100 != 0
                         || añoNacimiento % 400 == 0) && (diaNacimiento < 1
@@ -176,14 +176,14 @@ public class ProgramaA08 {
                 fallo = false;
             }
         } while (diaNacimiento < 1 || diaNacimiento > 31 || fallo);
-        
+
         if (mesActual > mesNacimiento || mesActual == mesNacimiento
                 && diaActual >= diaNacimiento) {
             edad = añoActual - añoNacimiento;
         } else {
             edad = añoActual - añoNacimiento - 1;
         }
-        
+
         System.out.println("Tu edad es: " + edad);
     }
 }

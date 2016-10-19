@@ -15,10 +15,10 @@ public class ProgramaA03 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int numero;
-        
+
         System.out.print("Introduzca un número: ");
         numero = scan.nextInt();
-        
+
         if ( numero % 2 == 0) {
             System.out.printf("El número %d es par.\n", numero);
         } else {
