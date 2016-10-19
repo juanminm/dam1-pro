@@ -1,5 +1,5 @@
 /*
- * 1.- Escribe un método que devuelva la suma de dos enteros.
+ * 1. Escribe un método que devuelva la suma de dos enteros.
  */
 package dam.programacion.juanminm.ejercicioud401;
 

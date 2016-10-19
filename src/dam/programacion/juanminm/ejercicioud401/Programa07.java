@@ -1,7 +1,7 @@
 /*
- * Escribe un método que acepte tres argumentos: un carácter y dos enteros. El
- * carácter se debe imprimir. El primer entero indica el número de veces que se
- * imprimirá el carácter en la línea y el segundo entero indica el número de
+ * 7. Escribe un método que acepte tres argumentos: un carácter y dos enteros.
+ * El carácter se debe imprimir. El primer entero indica el número de veces que
+ * se imprimirá el carácter en la línea y el segundo entero indica el número de
  * líneas que deben imprimir-se.
  */
 package dam.programacion.juanminm.ejercicioud401;

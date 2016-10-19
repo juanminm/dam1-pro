@@ -1,4 +1,4 @@
-/* 8. -  Escribe una método que acepte dos argumentos: el carácter que se desea 
+/* 8. Escribe una método que acepte dos argumentos: el carácter que se desea 
  * imprimir y el número de líneas que se imprimen en forma triangular
  *                                      a 
  *                                     aaa 
