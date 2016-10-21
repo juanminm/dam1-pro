@@ -5,18 +5,21 @@
  */
 package dam.programacion.juanminm.ejercicioud202;
 
+import java.util.Random;
+
 /**
  *
  * @author Juam Miguel Navarro Martínez
  */
 public class ProgramaB12 {
     public static void main(String[] args) {
+        Random random = new Random();
         int dado, cara1 = 0, cara2 = 0, cara3 = 0,
                 cara4 = 0, cara5 = 0,cara6 = 0;
         float pcntCara1, pcntCara2, pcntCara3, pcntCara4, pcntCara5, pcntCara6;
 
         for (int i = 1; i <= 1000000; i++) {
-            dado = (int) (Math.random()*6+1);
+            dado = random.nextInt(6)+1;
 
             switch(dado) {
                 case 1:

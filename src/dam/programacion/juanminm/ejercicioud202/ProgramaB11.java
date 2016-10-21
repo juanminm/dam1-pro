@@ -11,6 +11,7 @@
 package dam.programacion.juanminm.ejercicioud202;
 
 import java.util.Scanner;
+import java.util.Random;
 
 /**
  *
@@ -18,11 +19,12 @@ import java.util.Scanner;
  */
 public class ProgramaB11 {
     public static void main(String[] args) {
+        Random random = new Random();
         Scanner scan = new Scanner(System.in);
         String userInput;
         boolean esNumero;
         int i, intentos = 0;
-        int numero = (int) (Math.random() * 100 + 1);
+        int numero = random.nextInt(100) + 1;
 
         System.out.println("He generado un número entre el 1 y el 100. Intenta "
                 + "adivinarlo.");

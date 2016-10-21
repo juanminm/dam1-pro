@@ -7,17 +7,20 @@
  */
 package dam.programacion.juanminm.ejercicioud202;
 
+import java.util.Random;
+
 /**
  *
  * @author Juam Miguel Navarro Martínez
  */
 public class ProgramaB10 {
     public static void main(String[] args) {
+        Random random = new Random();
         int moneda, cara = 0, cruz = 0;
         float pcntCara, pcntCruz;
 
         for (int i = 1; i <= 1000000; i++) {
-            moneda = (int) (Math.random()*2+1);
+            moneda = random.nextInt(2)+1;
 
             switch(moneda) {
                 case 1:
