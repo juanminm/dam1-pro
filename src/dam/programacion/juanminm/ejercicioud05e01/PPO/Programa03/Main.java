@@ -16,7 +16,7 @@
       calcula la distancia a otro punto y el otro calcula la distancia al
       origen
  */
-package dam.programacion.juanminm.ejercicioud05e01.Programa03;
+package dam.programacion.juanminm.ejercicioud05e01.PPO.Programa03;
 
 /**
  *

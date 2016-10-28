@@ -13,7 +13,7 @@
  * b) Añadir a la clase Coche del ejercicio 1 un método de nombre imprimeCoche
  * que imprima el modelo y el color del coche.
  */
-package dam.programacion.juanminm.ejercicioud05e01.Programa01;
+package dam.programacion.juanminm.ejercicioud05e01.PPO.Programa01;
 
 /**
  *

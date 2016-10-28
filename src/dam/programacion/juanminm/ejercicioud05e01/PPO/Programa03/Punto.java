@@ -1,4 +1,4 @@
- package dam.programacion.juanminm.ejercicioud05e01.Programa03;
+ package dam.programacion.juanminm.ejercicioud05e01.PPO.Programa03;
 
 /**
  *
