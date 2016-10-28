@@ -7,7 +7,7 @@
  * b) Escribe un programa que instancie cuatro puntos: el primero situado en el
  *    origen, el segundo situado en (5,3), el tercero en (2, -1) y el cuarto
  *    estará situado en el punto medio entre el segundo y el tercero.
- * c) Añade a la clase Punto un constructor sin pará metros, que permita
+ * c) Añade a la clase Punto un constructor sin parámetros, que permita
  *    construir puntos en el origen de coordenadas
  * d) Añade un método a la clase Punto que calcule la distancia a otro punto
  * e) Escribir un programa que cree un punto en (4,3) y visualice la distancia
