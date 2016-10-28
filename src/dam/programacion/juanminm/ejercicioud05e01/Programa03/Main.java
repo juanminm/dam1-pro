@@ -28,8 +28,28 @@ public class Main {
         Punto punto2 = new Punto(5, 3);
         Punto punto3 = new Punto(2, -1);
         Punto punto4;
+        Punto puntoE;
 
         punto4 = new Punto((punto2.getCoordenadaX() + punto3.getCoordenadaX())/2,
                 (punto2.getCoordenadaY() + punto3.getCoordenadaY())/2);
+
+        System.out.println("La distancia entre P2 (" + punto2.getCoordenadaX()
+                + ", " + punto2.getCoordenadaY() + ") y P3 ("
+                + punto3.getCoordenadaX() + ", " + punto3.getCoordenadaY()
+                + ") es " + punto2.distancia(punto3));
+        System.out.println("--------\n");
+        puntoE = new Punto(4, 3);
+        System.out.println("La distancia de PE (" + puntoE.getCoordenadaX()
+                + ", " + puntoE.getCoordenadaY() + ") al origen es "
+                + puntoE.distancia());
+        System.out.println("--------\n");
+        System.out.println("La distancia de P4 (" + punto4.getCoordenadaX()
+                + ", " + punto4.getCoordenadaY() + ") al origen es "
+                + punto4.distancia());
+        System.out.println("--------\n");
+        System.out.println("La distancia entre PE (" + puntoE.getCoordenadaX()
+                + ", " + puntoE.getCoordenadaY() + ") y P2 ("
+                + punto2.getCoordenadaX() + ", " + punto2.getCoordenadaY()
+                + ") es " + puntoE.distancia(punto2));
     }
 }
