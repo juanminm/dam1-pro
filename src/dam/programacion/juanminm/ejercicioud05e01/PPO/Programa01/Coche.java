@@ -22,11 +22,16 @@ package dam.programacion.juanminm.ejercicioud05e01.PPO.Programa01;
 public class Coche {
     private String modelo;
     private String color;
-    private String pintura;
+    private boolean metalizado;
     private String matricula;
-    private String tipo;
     private int fechaFabricacion;
-    private String modalidadSeguro;
+
+    private enum tipo {
+        MINI, UTILITARIO, FAMILIAR, DEPORTIVO
+    }
+    private enum modalidadSeguro {
+        TERCEROS, TODO_RIESGO
+    }
 
     public void imprimeCoche() {
         System.out.println("Modelo: " + modelo + "\nColor: " + color);
