@@ -116,6 +116,7 @@ public class Reloj {
     public void calibrarReloj (int horas, int minutos) {
         this.horas = verificarHoras(horas);
         this.minutos = verificarMinutos(minutos);
+        this.segundos = 0;
     }
 
     public void calibrarReloj (int horas, int minutos, int segundos) {
