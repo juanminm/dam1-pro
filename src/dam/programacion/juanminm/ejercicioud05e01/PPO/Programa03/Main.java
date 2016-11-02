@@ -13,8 +13,8 @@
  * e) Escribir un programa que cree un punto en (4,3) y visualice la distancia
  *    del punto al origen de coordenadas
  * f) Escribe la clase Punto con dos métodos llamados distancia. Uno de ellos
-      calcula la distancia a otro punto y el otro calcula la distancia al
-      origen
+ *    calcula la distancia a otro punto y el otro calcula la distancia al
+ *    origen
  */
 package dam.programacion.juanminm.ejercicioud05e01.PPO.Programa03;
 
