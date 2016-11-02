@@ -29,8 +29,11 @@ public class Main {
     public static void main(String[] args) {
         Movil movil = new Movil();
 
-        System.out.println("Posicion tras 3.5 seg: " + movil.obtenerPos(3.5));
-        System.out.println("Posicion tras 4 seg: " + movil.obtenerPos(4));
-        System.out.println("Posicion tras 6.2 seg: " + movil.obtenerPos(6.2));
+        System.out.print("Posicion tras 3.5 seg: ");
+        movil.obtenerPos(3.5);
+        System.out.print("Posicion tras 4 seg: ");
+        movil.obtenerPos(4);
+        System.out.print("Posicion tras 6.2 seg: ");
+        movil.obtenerPos(6.2);
     }
 }

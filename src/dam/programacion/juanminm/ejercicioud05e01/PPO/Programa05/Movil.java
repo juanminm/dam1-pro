@@ -15,7 +15,8 @@ public class Movil {
         velocidad = 2.4;
     }
 
-    public double obtenerPos(double tiempo) {
-        return 2*(posX+2.4*tiempo)+1;
+    public void obtenerPos(double tiempo) {
+        System.out.println("(" + (posX+2.4*tiempo) + ", "
+                + (2*(posX+2.4*tiempo)+1) + ")");
     }
 }
