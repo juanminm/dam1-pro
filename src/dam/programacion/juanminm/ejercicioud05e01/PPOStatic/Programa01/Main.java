@@ -27,9 +27,9 @@ public class Main {
 
         bombilla.encender();
         plancha.encender();
-        bombilla.getConsumoTotal();
+        AparatoElectronico.getConsumoTotal();
         plancha.apagar();
         radiador.encender();
-        radiador.getConsumoTotal();
+        AparatoElectronico.getConsumoTotal();
     }
 }

@@ -28,15 +28,15 @@ public class Bombilla {
         }
     }
 
-   public void encenderInterruptorGeneral() {
+   public static void encenderInterruptorGeneral() {
         interruptorGeneral = true;
     }
 
-    public void apagarInterruptorGeneral() {
+    public static void apagarInterruptorGeneral() {
         interruptorGeneral = false;
     }
 
-    public void alternarInterruptorGeneral() {
+    public static void alternarInterruptorGeneral() {
         if (interruptorGeneral) {
             apagarInterruptorGeneral();
         } else {

@@ -13,7 +13,7 @@ public class Elemento {
         numeroElementos++;
     }
 
-    public void numeroDeElementos() {
+    public static void numeroDeElementos() {
         System.out.println("Número de elementos: " + numeroElementos);
     }
 }

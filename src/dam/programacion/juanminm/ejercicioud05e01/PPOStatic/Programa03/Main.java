@@ -15,6 +15,6 @@ public class Main {
         Elemento elem2 = new Elemento("Elemento 2");
         Elemento elem3 = new Elemento("Elemento 3");
 
-        elem3.numeroDeElementos();
+        Elemento.numeroDeElementos();
     }
 }

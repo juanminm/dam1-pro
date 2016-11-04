@@ -29,7 +29,7 @@ public class Main {
         bombilla.obtenerEstado();
         bombilla.alternar();
         bombilla.obtenerEstado();
-        bombilla.alternarInterruptorGeneral();
+        Bombilla.alternarInterruptorGeneral();
         bombilla.obtenerEstado();
     }
 }

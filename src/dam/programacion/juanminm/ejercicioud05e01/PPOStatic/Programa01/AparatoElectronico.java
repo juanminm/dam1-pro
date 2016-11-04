@@ -36,7 +36,7 @@ public class AparatoElectronico {
         }
     }
 
-    public void getConsumoTotal() {
+    public static void getConsumoTotal() {
         System.out.println("Consumo total: " + consumoTotal + "W");
     }
 }
