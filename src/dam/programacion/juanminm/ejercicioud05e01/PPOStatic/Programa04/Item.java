@@ -7,13 +7,13 @@ package dam.programacion.juanminm.ejercicioud05e01.PPOStatic.Programa04;
 public class Item {
     private String nombre;
     private int identificador;
-    private static int ultimoIdentificador = 0;
+    private static int siguienteIdentificador = 1;
 
     public Item(String nombre) {
         this.nombre = nombre;
-        identificador = ultimoIdentificador + 1;
+        identificador = siguienteIdentificador;
 
-        ultimoIdentificador = identificador;
+        siguienteIdentificador++;
     }
 
     public void getNombre() {
