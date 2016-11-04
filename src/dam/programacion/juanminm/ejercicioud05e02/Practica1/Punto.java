@@ -16,5 +16,30 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica1;
  * @author Juan Miguel Navarro Martínez
  */
 public class Punto {
+    private double x;
+    private double y;
 
+    public Punto() {
+        x = 0;
+        y = 0;
+    }
+
+    public Punto(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public double obtenerX() {
+        return x;
+    }
+
+    public double obtenerY() {
+        return y;
+    }
+
+    public double calcularDistanciaDesde(Punto destino) {
+        return Math.sqrt(
+            Math.pow(destino.x - this.x, 2) + Math.pow(destino.y - this.y, 2)
+        );
+    }
 }
