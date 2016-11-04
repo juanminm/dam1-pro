@@ -6,14 +6,14 @@ package dam.programacion.juanminm.ejercicioud05e01.PPOStatic.Programa03;
  */
 public class Elemento {
     private String nombre;
-    private static int NUMERO_ELEMENTOS = 0;
+    private static int numeroElementos = 0;
 
     public Elemento(String nombre) {
         this.nombre = nombre;
-        NUMERO_ELEMENTOS++;
+        numeroElementos++;
     }
 
     public void numeroDeElementos() {
-        System.out.println("Número de elementos: " + NUMERO_ELEMENTOS);
+        System.out.println("Número de elementos: " + numeroElementos);
     }
 }

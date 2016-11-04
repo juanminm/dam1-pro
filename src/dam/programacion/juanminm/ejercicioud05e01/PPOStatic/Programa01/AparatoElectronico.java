@@ -8,7 +8,7 @@ public class AparatoElectronico {
     private String nombre;
     private double consumo;
     private boolean encendido;
-    private static double CONSUMO_TOTAL = 0;
+    private static double consumoTotal = 0;
 
     public AparatoElectronico(String nombre, double consumo) {
         this.nombre = nombre;
@@ -21,7 +21,7 @@ public class AparatoElectronico {
     public void apagar() {
         if (encendido) {
             encendido = false;
-            CONSUMO_TOTAL -= consumo;
+            consumoTotal -= consumo;
 
             System.out.println(nombre + " apagado/a.");
         }
@@ -30,13 +30,13 @@ public class AparatoElectronico {
     public void encender() {
         if (!encendido) {
             encendido = true;
-            CONSUMO_TOTAL += consumo;
+            consumoTotal += consumo;
 
             System.out.println(nombre + " encendido/a.");
         }
     }
 
     public void getConsumoTotal() {
-        System.out.println("Consumo total: " + CONSUMO_TOTAL + "W");
+        System.out.println("Consumo total: " + consumoTotal + "W");
     }
 }

@@ -6,7 +6,7 @@ package dam.programacion.juanminm.ejercicioud05e01.PPOStatic.Programa05;
  */
 public class Bombilla {
     private boolean interruptor;
-    private static boolean INTERRUPTOR_GENERAL = false;
+    private static boolean interruptorGeneral = false;
 
     public Bombilla() {
         interruptor = false;
@@ -29,15 +29,15 @@ public class Bombilla {
     }
 
    public void encenderInterruptorGeneral() {
-        INTERRUPTOR_GENERAL = true;
+        interruptorGeneral = true;
     }
 
     public void apagarInterruptorGeneral() {
-        INTERRUPTOR_GENERAL = false;
+        interruptorGeneral = false;
     }
 
     public void alternarInterruptorGeneral() {
-        if (INTERRUPTOR_GENERAL) {
+        if (interruptorGeneral) {
             apagarInterruptorGeneral();
         } else {
             encenderInterruptorGeneral();
@@ -45,7 +45,7 @@ public class Bombilla {
     }
 
     public void obtenerEstado() {
-        if (INTERRUPTOR_GENERAL && interruptor) {
+        if (interruptorGeneral && interruptor) {
             System.out.println("La bombilla está encendida.");
         } else {
             System.out.println("La bombilla está apagada.");

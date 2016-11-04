@@ -7,12 +7,12 @@
 public class Punto {
     private double x;
     private double y;
-    private static double ORIGEN_X = 0;
-    private static double ORIGEN_Y = 0;
+    private static double origenX = 0;
+    private static double origenY = 0;
 
     public Punto() {
-        x = ORIGEN_X;
-        y = ORIGEN_Y;
+        x = origenX;
+        y = origenY;
     }
 
     public Punto(double x, double y) {
