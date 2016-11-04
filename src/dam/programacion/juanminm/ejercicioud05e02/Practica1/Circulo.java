@@ -22,5 +22,41 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica1;
  * @author Juan Miguel Navarro Martínez
  */
 public class Circulo {
+    private Punto centro;
+    private double radio;
+
+    public Circulo() {
+        centro = new Punto();
+        radio = 0;
+    }
+
+    public Circulo(Punto centro, double radio) {
+        this.centro = centro;
+        this.radio = radio;
+    }
+
+    public Circulo(double x, double y, double radio) {
+        this.centro = new Punto(x, y);
+        this.radio = radio;
+    }
+
+    public double obtenerCentroX() {
+        return centro.obtenerX();
+    }
+
+    public double obtenerCentroY() {
+        return centro.obtenerY();
+    }
+
+    public void obtenerCentro() {
+        System.out.printf("(%f, %f)%n", obtenerCentroX(), obtenerCentroY());
+    }
+
+    public double calcularDistanciaDesde(Punto destino) {
+        return Math.sqrt(
+            Math.pow(destino.obtenerX() - centro.obtenerX(), 2)
+            + Math.pow(destino.obtenerY() - centro.obtenerY(), 2)
+        );
+    }
 
 }
