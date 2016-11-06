@@ -22,23 +22,28 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica1;
  * @author Juan Miguel Navarro Martínez
  */
 public class Triangulo {
-    private double catetoBase;
-    private double catetoAltura;
-    private double hipotenusa;
+    private Punto puntoA;
+    private Punto puntoB;
+    private Punto puntoC;
 
     public Triangulo() {
-        catetoBase = 1;
-        catetoAltura = 1;
-        hipotenusa = calcularHipotenusa(catetoBase, catetoAltura);
+        puntoA = new Punto(0,0);
+        puntoB = new Punto(0,1);
+        puntoC = new Punto(1,0);
     }
 
     public Triangulo(Punto puntoA, Punto puntoB, Punto puntoC) {
-        catetoBase = puntoA.calcularDistanciaDesde(puntoB);
-        catetoAltura = puntoA.calcularDistanciaDesde(puntoC);
-        hipotenusa = puntoB.calcularDistanciaDesde(puntoC);
+        this.puntoA = puntoA;
+        this.puntoB = puntoB;
+        this.puntoC = puntoC;
     }
 
-    private double calcularHipotenusa(double catetoBase, double catetoAltura) {
-        return Math.sqrt(Math.pow(catetoBase, 2) + Math.pow(catetoAltura, 2));
+    public Triangulo(double coordenadaXPuntoA, double coordenadaYPuntoA,
+            double coordenadaXPuntoB, double coordenadaYPuntoB,
+            double coordenadaXPuntoC, double coordenadaYPuntoC
+            ) {
+        puntoA = new Punto(coordenadaXPuntoA, coordenadaYPuntoA);
+        puntoB = new Punto(coordenadaXPuntoB, coordenadaYPuntoB);
+        puntoC = new Punto(coordenadaXPuntoC, coordenadaYPuntoC);
     }
 }
