@@ -46,4 +46,49 @@ public class Triangulo {
         puntoB = new Punto(coordenadaXPuntoB, coordenadaYPuntoB);
         puntoC = new Punto(coordenadaXPuntoC, coordenadaYPuntoC);
     }
+
+    public Punto obtenerPuntoA() {
+        return puntoA;
+    }
+
+    public Punto obtenerPuntoB() {
+        return puntoB;
+    }
+
+    public Punto obtenerPuntoC() {
+        return puntoC;
+    }
+
+    public double calcularDistanciaDesde(Punto punto) {
+        double distancia;
+        Punto centro;
+        double centroX = (this.puntoA.obtenerX() + this.puntoB.obtenerX()
+                + this.puntoC.obtenerX())/3;
+        double centroY = (this.puntoA.obtenerY() + this.puntoB.obtenerY()
+                + this.puntoC.obtenerY())/3;
+
+        centro = new Punto(centroX, centroY);
+
+        distancia = centro.calcularDistanciaDesde(punto);
+
+        return distancia;
+    }
+
+    public double calcularArea(){
+        /*
+         * La Fórmula del área de Gauss se representa como:
+         *
+         * A = 1/2 * |x1y2 + x2y3 + x3y1 - x2y1 - x3y2 - x1y3|
+         *   = 1/2 * |x1(y2-y3) + x2(y3-y1) + x3(y1-y2)|
+         */
+        return Math.abs((puntoA.obtenerX()*(puntoB.obtenerY()-puntoC.obtenerY())
+                + puntoB.obtenerX()*(puntoC.obtenerY()-puntoA.obtenerY())
+                + puntoC.obtenerX()*(puntoA.obtenerY()-puntoB.obtenerY())))/2;
+    }
+
+    public double calcularPerimetro() {
+        return puntoA.calcularDistanciaDesde(puntoB)
+                + puntoA.calcularDistanciaDesde(puntoC)
+                + puntoB.calcularDistanciaDesde(puntoC);
+    }
 }
