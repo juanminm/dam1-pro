@@ -67,6 +67,8 @@ public class Practica_1 {
 
         punto1 = new Punto(5, -3);
         punto2 = new Punto(3, 6);
+        System.out.printf("%-36s %f %n", "Distnacia entre punto 1 y punto 2:",
+                punto1.calcularDistanciaDesde(punto2));
 
         circulo = new Circulo(8, 10, 4);
         System.out.printf("%-36s %f %n", "Area del circulo:", circulo.calcularArea());
