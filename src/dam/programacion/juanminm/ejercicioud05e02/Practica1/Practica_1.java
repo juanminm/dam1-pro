@@ -60,5 +60,29 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica1;
  * @author Juan Miguel Navarro Martínez
  */
 public class Practica_1 {
+    public static void main(String[] args) {
+        Punto punto1, punto2, punto3;
+        Circulo circulo;
+        Triangulo triangulo;
 
+        punto1 = new Punto(5, -3);
+        punto2 = new Punto(3, 6);
+
+        circulo = new Circulo(8, 10, 4);
+        System.out.printf("%-36s %f %n", "Area del circulo:", circulo.calcularArea());
+        System.out.printf("%-36s %f %n", "Perimetro del circulo:",
+                circulo.calcularPerimetro());
+        System.out.printf("%-36s %f %n", "Distancia del circulo al punto 1:",
+                circulo.calcularDistanciaDesde(punto1));
+        System.out.println();
+
+        triangulo = new Triangulo(0, 4, -1, 3, 5, -2);
+        punto3 = new Punto(0, 7);
+
+        System.out.printf("%-36s %f %n", "Area del triangulo:", triangulo.calcularArea());
+        System.out.printf("%-36s %f %n", "Perimetro del triangulo:",
+                triangulo.calcularPerimetro());
+        System.out.printf("%-36s %f %n", "Distancia del triangulo al punto 3:",
+                triangulo.calcularDistanciaDesde(punto1));
+    }
 }
