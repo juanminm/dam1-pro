@@ -38,7 +38,7 @@ public class Garaje {
             this.averia = null;
             existeCoche = false;
         } else {
-            System.err.printf("No hay ningun coche a devolver.%n");
+            System.out.printf("No hay ningun coche a devolver.%n");
         }
 
     }
