@@ -65,8 +65,8 @@ public class Practica_3 {
 
     public static void main(String[] args) {
         Garaje garaje = new Garaje();
-        Coche coche1 = new Coche("Nissan", "Land Rover");
-        Coche coche2 = new Coche("Peugot", "260");
+        Coche coche1 = new Coche("Nissan", "Land Rover", 390);
+        Coche coche2 = new Coche("Peugot", "260", 630);
 
         arreglarCoche(garaje, coche1);
         garaje.devolverCoche();

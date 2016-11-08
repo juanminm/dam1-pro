@@ -20,9 +20,10 @@ public class Coche {
     private String marca, modelo;
     private double precioAcumulado;
 
-    public Coche(String marca, String modelo) {
+    public Coche(String marca, String modelo, int CV) {
         this.marca = marca;
         this.modelo = modelo;
+        this.motor = new Motor(CV);
     }
 
     public Motor obtenerMotor() {
