@@ -21,7 +21,7 @@ public class Garaje {
     private int numeroCoches = 0;
     private boolean existeCoche = false;
 
-    private void aceptarCoche(Coche coche, String averia) {
+    public void aceptarCoche(Coche coche, String averia) {
         if (!existeCoche) {
             this.coche = coche;
             this.averia = averia;
@@ -32,7 +32,7 @@ public class Garaje {
         }
     }
 
-    private void devolverCoche() {
+    public void devolverCoche() {
         if (existeCoche) {
             this.coche = null;
             this.averia = null;
