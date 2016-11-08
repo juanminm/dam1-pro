@@ -16,5 +16,32 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica3;
  * @author Juan Miguel Navarro Martínez
  */
 public class Coche {
+    private Motor motor;
+    private String marca, modelo;
+    private double precioAcumulado;
 
+    public Coche(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    public Motor obtenerMotor() {
+        return motor;
+    }
+
+    public String obtenerMarca() {
+        return marca;
+    }
+
+    public String obtenerModelo() {
+        return modelo;
+    }
+
+    public double obtenerPrecioAcumulado() {
+        return precioAcumulado;
+    }
+
+    public void acumularAveria(double costeAveria) {
+        precioAcumulado += costeAveria;
+    }
 }
