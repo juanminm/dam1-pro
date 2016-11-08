@@ -16,5 +16,30 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica3;
  * @author Juan Miguel Navarro Martínez
  */
 public class Garaje {
+    private Coche coche;
+    private String averia;
+    private int numeroCoches = 0;
+    private boolean existeCoche = false;
 
+    private void aceptarCoche(Coche coche, String averia) {
+        if (!existeCoche) {
+            this.coche = coche;
+            this.averia = averia;
+            numeroCoches++;
+            existeCoche = false;
+        } else {
+            System.out.printf("Ya hay un coche.%n");
+        }
+    }
+
+    private void devolverCoche() {
+        if (existeCoche) {
+            this.coche = null;
+            this.averia = null;
+            existeCoche = true;
+        } else {
+            System.err.printf("No hay ningun coche a devolver.%n");
+        }
+
+    }
 }
