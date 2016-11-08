@@ -26,7 +26,7 @@ public class Garaje {
             this.coche = coche;
             this.averia = averia;
             numeroCoches++;
-            existeCoche = false;
+            existeCoche = true;
         } else {
             System.out.printf("Ya hay un coche.%n");
         }
@@ -36,7 +36,7 @@ public class Garaje {
         if (existeCoche) {
             this.coche = null;
             this.averia = null;
-            existeCoche = true;
+            existeCoche = false;
         } else {
             System.err.printf("No hay ningun coche a devolver.%n");
         }
