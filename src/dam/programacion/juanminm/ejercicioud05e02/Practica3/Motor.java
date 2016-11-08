@@ -14,5 +14,22 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica3;
  * @author Juan Miguel Navarro Martínez
  */
 public class Motor {
+    private int litrosDeAceite, CV;
 
+    public Motor(int CV) {
+        this.CV = CV;
+        litrosDeAceite = 0;
+    }
+
+    public int obtenerLitrosDeAceite() {
+        return litrosDeAceite;
+    }
+
+    public int obtenerCV() {
+        return CV;
+    }
+
+    public void introducirLitrosDeAceite(int litrosDeAceite) {
+        this.litrosDeAceite = litrosDeAceite;
+    }
 }
