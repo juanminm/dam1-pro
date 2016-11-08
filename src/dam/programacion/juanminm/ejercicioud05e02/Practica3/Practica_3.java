@@ -38,10 +38,59 @@
  */
 package dam.programacion.juanminm.ejercicioud05e02.Practica3;
 
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  *
  * @author Juan Miguel Navarro Martínez
  */
 public class Practica_3 {
+    public static void arreglarCoche(Garaje garaje, Coche coche) {
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        String averia;
+        Motor motor;
 
+        System.out.printf("Introduzca la averia: ");
+        averia = scanner.next();
+        garaje.aceptarCoche(coche, averia);
+        coche.acumularAveria(random.nextDouble()*(300-50)+50);
+
+        if (averia.equalsIgnoreCase("aceite")) {
+            motor = coche.obtenerMotor();
+            motor.introducirLitrosDeAceite(10);
+        }
+    }
+
+    public static void main(String[] args) {
+        Garaje garaje = new Garaje();
+        Coche coche1 = new Coche("Nissan", "Land Rover");
+        Coche coche2 = new Coche("Peugot", "260");
+
+        arreglarCoche(garaje, coche1);
+        garaje.devolverCoche();
+
+        arreglarCoche(garaje, coche2);
+        garaje.devolverCoche();
+
+        arreglarCoche(garaje, coche2);
+        garaje.devolverCoche();
+
+        arreglarCoche(garaje, coche1);
+        garaje.devolverCoche();
+
+        System.out.printf("Primer coche%n");
+        System.out.printf("%-19s %s%n", "Marca:", coche1.obtenerMarca());
+        System.out.printf("%-19s %s%n", "Modelo:", coche1.obtenerModelo());
+        System.out.printf("%-19s %.2f€%n", "Precio acumulado:",
+                coche1.obtenerPrecioAcumulado());
+
+        System.out.println();
+        System.out.printf("Segundo coche%n");
+        System.out.printf("%-19s %s%n", "Marca:", coche2.obtenerMarca());
+        System.out.printf("%-19s %s%n", "Modelo:", coche2.obtenerModelo());
+        System.out.printf("%-19s %.2f€%n", "Precio acumulado:",
+                coche2.obtenerPrecioAcumulado());
+    }
 }
