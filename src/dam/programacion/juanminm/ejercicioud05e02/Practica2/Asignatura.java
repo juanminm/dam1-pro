@@ -13,5 +13,22 @@ package dam.programacion.juanminm.ejercicioud05e02.Practica2;
  * @author Juan Miguel Navarro Martínez
  */
 public class Asignatura {
+    private int identificador;
+    private double calificacion;
 
+    public Asignatura(int identificador) {
+        this.identificador = identificador;
+    }
+
+    public int obtenerIdentificador() {
+        return identificador;
+    }
+
+    public double obtenerCalificacion() {
+        return calificacion;
+    }
+
+    public void insertarCalificacion(double calificacion) {
+        this.calificacion = calificacion;
+    }
 }
