@@ -30,9 +30,7 @@ public class Programa01 {
         char ultimoCaracter = nombreCompleto.charAt(ultimaPosicion);
 
         while (posicion != -1) {
-            posicion = nombreCompleto.indexOf(
-                    nombreCompleto.charAt(nombreCompleto.length()-1), posicion
-            );
+            posicion = nombreCompleto.indexOf(ultimoCaracter, posicion);
 
             if (posicion != -1) {
                 posicion++;
