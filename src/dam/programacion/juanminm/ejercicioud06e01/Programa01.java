@@ -21,7 +21,7 @@ import java.util.Scanner;
  *
  * @author Juan Miguel Navarro Martínez
  */
-public class Programa1 {
+public class Programa01 {
 
     public static void contarOcurrenciasUltimoCaracter(String nombreCompleto) {
         int contador = 0;

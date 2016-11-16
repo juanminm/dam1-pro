@@ -22,7 +22,7 @@ import java.util.Scanner;
  *
  * @author Juan Miguel Navarro Martínez
  */
-public class Programa4 {
+public class Programa04 {
     public static String reemplazarTexto(String cadena) {
         return cadena.replaceAll("es", "no por");
     }

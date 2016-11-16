@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Juan Miguel Navarro Martínez
  */
-public class Programa2 {
+public class Programa02 {
     public static String reemplazarVocales(String cadena) {
         return cadena.replaceAll("[a-zñç]", "a");
     }

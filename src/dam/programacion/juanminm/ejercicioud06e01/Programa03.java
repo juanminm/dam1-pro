@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Juan Miguel Navarro Martínez
  */
-public class Programa3 {
+public class Programa03 {
     public static String devolverMitadCadena(String cadena) {
         int longitudMitad = cadena.length() / 2;
 
