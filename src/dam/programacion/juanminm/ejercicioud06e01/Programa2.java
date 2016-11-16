@@ -12,15 +12,17 @@ import java.util.Scanner;
  * @author Juan Miguel Navarro Martínez
  */
 public class Programa2 {
+    public static String reemplazarVocales(String cadena) {
+        return cadena.replaceAll("[a-zñç]", "a");
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String string;
-        String string2;
+        String cadena;
 
         System.out.println("Introduzca una cadena de caracteres: ");
-        string = scan.nextLine();
+        cadena = scan.nextLine();
 
-        string2 = string.replaceAll("[a-zñç]", "a");
-        System.out.println(string2);
+        System.out.println(reemplazarVocales(cadena));
     }
 }
