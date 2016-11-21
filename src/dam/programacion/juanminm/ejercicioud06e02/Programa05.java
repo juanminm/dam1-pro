@@ -14,17 +14,20 @@ import java.util.Scanner;
 public class Programa05 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int[] arrayNum = new int[10];
+        int[] arrayNum = new int[50];
+        int suma = 0;
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.printf("Introduzca el %dº número: ", i);
-            arrayNum[i-1] = scan.nextInt();
+        for (int i = 0; i <= arrayNum.length; i++) {
+            System.out.printf("Introduzca el %dº número: ", i + 1);
+            arrayNum[i] = scan.nextInt();
         }
         System.out.println();
 
         for (int num: arrayNum) {
-            System.out.printf("%d ", num);
+            if (num % 2 == 0) {
+                suma += num;
+            }
         }
-        System.out.println();
+        System.out.printf("La suma es: %d%n", suma);
     }
 }
