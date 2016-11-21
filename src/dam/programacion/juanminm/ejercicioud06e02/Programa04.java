@@ -23,13 +23,18 @@ public class Programa04 {
         }
         System.out.println();
 
+        for (int num: arrayNum) {
+            System.out.printf("%d ", num);
+        }
+        System.out.println();
+
         for (int i = 0; i < arrayNum.length; i += 1) {
             if (arrayNum[i] % 2 == 0) {
                 System.out.printf("Pos %d: %d%n", i, arrayNum[i]);
             }
         }
         System.out.println();
-        
+
         for (int i = 0; i < arrayNum.length; i += 1) {
             if (arrayNum[i] % 2 == 1) {
                 System.out.printf("Pos %d: %d%n", i, arrayNum[i]);
