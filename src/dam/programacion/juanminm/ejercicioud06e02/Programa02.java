@@ -5,10 +5,31 @@
  */
 package dam.programacion.juanminm.ejercicioud06e02;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Juan Miguel Navarro Martínez
  */
 public class Programa02 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int[] arrayNum = new int[10];
 
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("Introduzca el %dº número: ", i);
+            arrayNum[i-1] = scan.nextInt();
+        }
+        System.out.println();
+
+        for (int i = 0; i < arrayNum.length; i += 2) {
+            System.out.print(arrayNum[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 1; i < arrayNum.length; i += 2) {
+            System.out.print(arrayNum[i] + " ");
+        }
+
+    }
 }
