@@ -15,9 +15,9 @@ public class Programa03 {
         Scanner scan = new Scanner(System.in);
         int[] arrayNum = new int[20];
 
-        for (int i = 1; i <= 20; i++) {
-            System.out.printf("Introduzca el %dº número: ", i);
-            arrayNum[i-1] = scan.nextInt();
+        for (int i = 0; i <= arrayNum.length; i++) {
+            System.out.printf("Introduzca el %dº número: ", i + 1);
+            arrayNum[i] = scan.nextInt();
         }
         System.out.println();
 
