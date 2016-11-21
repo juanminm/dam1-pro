@@ -17,7 +17,7 @@ public class Programa02 {
         String[] arrayNum = new String[10];
 
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("Introduzca el %dº número: ", i);
+            System.out.printf("Introduzca el %dº caracter alfanumérico: ", i);
             arrayNum[i-1] = scan.next();
         }
         System.out.println();
