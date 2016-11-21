@@ -14,11 +14,11 @@ import java.util.Scanner;
 public class Programa02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int[] arrayNum = new int[10];
+        String[] arrayNum = new String[10];
 
         for (int i = 1; i <= 10; i++) {
             System.out.printf("Introduzca el %dº número: ", i);
-            arrayNum[i-1] = scan.nextInt();
+            arrayNum[i-1] = scan.next();
         }
         System.out.println();
 
