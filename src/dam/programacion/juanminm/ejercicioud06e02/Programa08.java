@@ -14,17 +14,21 @@ import java.util.Scanner;
 public class Programa08 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int[] arrayNum = new int[10];
+        int[] arrayNum = new int[20];
+        int contador = 0;
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.printf("Introduzca el %dº número: ", i);
-            arrayNum[i-1] = scan.nextInt();
+        for (int i = 0; i < arrayNum.length; i++) {
+            System.out.printf("Introduzca el %dº número: ", i + 1);
+            arrayNum[i] = scan.nextInt();
         }
         System.out.println();
 
-        for (int num: arrayNum) {
-            System.out.printf("%d ", num);
+        for (int i = 0; i < arrayNum.length; i++) {
+            if (arrayNum[i] >= 10) {
+                System.out.printf("Pos %d: %d%n", i, arrayNum[i]);
+                contador++;
+            }
         }
-        System.out.println();
+        System.out.printf("Hay %d diezes.%n", contador);
     }
 }
