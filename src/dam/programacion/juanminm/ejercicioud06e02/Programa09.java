@@ -5,7 +5,6 @@
  */
 package dam.programacion.juanminm.ejercicioud06e02;
 
-import java.util.Random;
 import java.util.Scanner;
 
 /**
