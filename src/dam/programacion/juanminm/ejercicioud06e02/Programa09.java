@@ -24,7 +24,7 @@ public class Programa09 {
         }
 
         for (int i = 0; i < arrayNum.length; i++) {
-            if (numMayor <= arrayNum[i]) {
+            if (numMayor < arrayNum[i]) {
                 numMayor = arrayNum[i];
                 posicionMayor = i;
             }
