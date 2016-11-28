@@ -31,7 +31,7 @@ public class Programa11 {
 
         for (int i = 0; i < arrayV.length; i++) {
             mayorQue10 = false;
-            if (posArrayP < 10) {
+            if (posArrayP < arrayP.length) {
                 for (int j = posArrayP; j < arrayP.length; j++) {
                     if (!mayorQue10) {
                         if (arrayP[j] > 10) {
