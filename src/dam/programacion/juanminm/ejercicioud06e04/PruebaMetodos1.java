@@ -133,12 +133,31 @@ public class PruebaMetodos1 {
 
         return arrayPotencias;
     }
+
+    /*
+     * 6. Escribe un método que reciba como parámetro un array de cadenas y
+     *    devuelva la cadena resultante de concatenar todas las contenidas en el
+     *    array.
+     */
+    private static String concatenarStringArrayAString(String[] arrayString) {
+        String cadenaConcatenada = "";
+
+        for (String cadena : arrayString) {
+            cadenaConcatenada += cadena;
+        }
+
+        return cadenaConcatenada;
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
         int[] arrayNum3 = new int[30];
         int[] arrayNum4 = {94, 64, 631, 73, 28};
         int numPotencias = 10;
+        String[] arrayString1 = {"El perro de ", "San Roque no", " tiene ",
+            "rabo por", "que Ram", "on Ramirez se lo", " ha cortado", "."
+        };
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -154,6 +173,9 @@ public class PruebaMetodos1 {
 
         System.out.printf("%nResultado de arrayPotencias2:%n%s%n",
                 obtenerArrayComoString(arrayPotencias2(numPotencias)));
+
+        System.out.printf("%nResultado de concatenarStringArrayAString:%n%s%n",
+                concatenarStringArrayAString(arrayString1));
     }
 
 }
