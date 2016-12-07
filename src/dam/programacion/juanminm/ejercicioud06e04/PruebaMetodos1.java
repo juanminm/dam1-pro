@@ -111,7 +111,7 @@ public class PruebaMetodos1 {
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
 
-        System.out.printf("%nResultado de obtenerArrayComoString:%n%s",
+        System.out.printf("%nResultado de obtenerArrayComoString:%n%s%n",
                 obtenerArrayComoString(arrayNum2));
 
         completarArray3(arrayNum3);
