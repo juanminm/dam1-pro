@@ -89,15 +89,34 @@ public class PruebaMetodos1 {
         return arrayComoString;
     }
 
+    /*
+     * 3. Escribe un método, de nombre completarArray3, que reciba un array de
+     *    enteros por parámetro y lo rellene de forma que contenga tantos
+     *    números pares, a partir del cero, como permita su capacidad.
+     */
+    private static void completarArray3(int[] arrayNum) {
+        int contadorNumeroPar = 0;
+
+        for (int i = 0; i < arrayNum.length; i++) {
+            arrayNum[i] = contadorNumeroPar;
+            contadorNumeroPar += 2;
+        }
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
+        int[] arrayNum3 = new int[30];
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
 
         System.out.printf("%nResultado de obtenerArrayComoString:%n%s",
                 obtenerArrayComoString(arrayNum2));
+
+        completarArray3(arrayNum3);
+        System.out.printf("%nResultado de completarArray3:%n");
+        mostrarArrayPantalla2(arrayNum3);
     }
 
 }
