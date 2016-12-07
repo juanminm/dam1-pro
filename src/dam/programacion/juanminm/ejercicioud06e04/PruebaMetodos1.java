@@ -55,10 +55,10 @@ package dam.programacion.juanminm.ejercicioud06e04;
 public class PruebaMetodos1 {
 
     /*
-    *  1. Escribe un método, de nombre mostrarArrayPantalla2, que reciba por
-    *     parámetro un array de enteros y muestre sus valores por pantalla separados
-    *     por comas.
-    */
+     *  1. Escribe un método, de nombre mostrarArrayPantalla2, que reciba por
+     *     parámetro un array de enteros y muestre sus valores por pantalla
+     *     separados por comas.
+     */
     private static void mostrarArrayPantalla2(int[] arrayNum) {
         for (int i = 0; i < arrayNum.length; i++) {
             System.out.printf("%d", arrayNum[i]);
