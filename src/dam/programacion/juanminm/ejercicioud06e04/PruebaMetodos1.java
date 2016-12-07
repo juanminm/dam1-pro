@@ -54,8 +54,27 @@ package dam.programacion.juanminm.ejercicioud06e04;
  */
 public class PruebaMetodos1 {
 
-    public static void main(String[] args) {
+    /*
+    *  1. Escribe un método, de nombre mostrarArrayPantalla2, que reciba por
+    *     parámetro un array de enteros y muestre sus valores por pantalla separados
+    *     por comas.
+    */
+    private static void mostrarArrayPantalla2(int[] arrayNum) {
+        for (int i = 0; i < arrayNum.length; i++) {
+            System.out.printf("%d", arrayNum[i]);
 
+            if (i < arrayNum.length - 1) {
+                System.out.printf(", ");
+            }
+        }
+        System.out.printf("%n");
+    }
+
+    public static void main(String[] args) {
+        int[] arrayNum1 = {1, 5, 6, 9, 10};
+
+        System.out.printf("Resultado de mostrarArrayPantalla2:%n");
+        mostrarArrayPantalla2(arrayNum1);
     }
 
 }
