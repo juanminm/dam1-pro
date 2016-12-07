@@ -70,11 +70,34 @@ public class PruebaMetodos1 {
         System.out.printf("%n");
     }
 
+    /*
+     * 2. Escribe un método, de nombre obtenerArrayComoString, que reciba un
+     *    array de enteros por parámetro y devuelva una cadena de caracteres con
+     *    su contenido.
+     */
+    private static String obtenerArrayComoString(int[] arrayNum) {
+        String arrayComoString = "";
+
+        for (int i = 0; i < arrayNum.length; i++) {
+            arrayComoString += arrayNum[i];
+
+            if (i < arrayNum.length - 1) {
+                arrayComoString += " ";
+            }
+        }
+
+        return arrayComoString;
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
+        int[] arrayNum2 = {50, 30, 2, 95, 6};
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
+
+        System.out.printf("%nResultado de obtenerArrayComoString:%n%s",
+                obtenerArrayComoString(arrayNum2));
     }
 
 }
