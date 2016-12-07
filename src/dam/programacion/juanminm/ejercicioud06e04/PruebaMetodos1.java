@@ -103,10 +103,26 @@ public class PruebaMetodos1 {
         }
     }
 
+    /*
+     *  4. Escribe un método, de nombre obtenerSumaArray, que reciba por
+     *     parámetro un array de enteros y devuelva la suma de sus elementos.
+     */
+    private static int obtenerSumaArray(int[] arrayNum) {
+        int suma = 0;
+
+        for (int i = 0; i < arrayNum.length; i++) {
+            suma += arrayNum[i];
+        }
+
+
+        return suma;
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
         int[] arrayNum3 = new int[30];
+        int[] arrayNum4 = {94, 64, 631, 73, 28};
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -117,6 +133,8 @@ public class PruebaMetodos1 {
         completarArray3(arrayNum3);
         System.out.printf("%nResultado de completarArray3:%n");
         mostrarArrayPantalla2(arrayNum3);
+
+        System.out.printf("%nResultado de obtenerSumaArray:%n%d%n", obtenerSumaArray(arrayNum4));
     }
 
 }
