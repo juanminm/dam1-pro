@@ -149,6 +149,21 @@ public class PruebaMetodos1 {
         return cadenaConcatenada;
     }
 
+    /*
+     *  7. Escribe un método, de nombre obtenerSumaLongCadArray, que reciba por
+     *     parámetro un array de cadenas y devuelva el número total de
+     *     caracteres de todas las cadenas del array.
+     */
+    private static int obtenerSumaLongCadArray(String[] arrayString) {
+        int longitud = 0;
+
+        for (String cadena : arrayString) {
+            longitud += cadena.length();
+        }
+
+        return longitud;
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
@@ -158,6 +173,8 @@ public class PruebaMetodos1 {
         String[] arrayString1 = {"El perro de ", "San Roque no", " tiene ",
             "rabo por", "que Ram", "on Ramirez se lo", " ha cortado", "."
         };
+        String[] arrayString2 = {"En un l", "ugar de la Manc", "ha de ",
+            "cuyo nombr", "e no", " quiero a", "cordarme."};
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -176,6 +193,9 @@ public class PruebaMetodos1 {
 
         System.out.printf("%nResultado de concatenarStringArrayAString:%n%s%n",
                 concatenarStringArrayAString(arrayString1));
+
+        System.out.printf("%nResutlado de obtenerSumaLongCadArray:%n%d%n",
+                obtenerSumaLongCadArray(arrayString2));
     }
 
 }
