@@ -164,6 +164,21 @@ public class PruebaMetodos1 {
         return longitud;
     }
 
+    /*
+     *  8. Escribe un método, de nombre obtenerLongCadenas, que reciba por
+     *     parámetro un array de cadenas y devuelva un array de enteros con los
+     *     tamaños de las cadenas contenidas en el array.
+     */
+    private static int[] obtenerLongCadenas(String[] arrayString) {
+        int[] longitudCadenas = new int[arrayString.length];
+
+        for (int i = 0; i < arrayString.length; i++) {
+            longitudCadenas[i] = arrayString[i].length();
+        }
+
+        return longitudCadenas;
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
@@ -175,6 +190,9 @@ public class PruebaMetodos1 {
         };
         String[] arrayString2 = {"En un l", "ugar de la Manc", "ha de ",
             "cuyo nombr", "e no", " quiero a", "cordarme."};
+        String[] arrayString3 = {"How often have I said t", "o you that when",
+            "you have e", "liminated the impossible", ", whatever ", "remains,",
+            " however improbab", "le, must", "be the truth?"};
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -196,6 +214,9 @@ public class PruebaMetodos1 {
 
         System.out.printf("%nResutlado de obtenerSumaLongCadArray:%n%d%n",
                 obtenerSumaLongCadArray(arrayString2));
+
+        System.out.printf("%nResultado de obtenerLongCadenas:%n");
+        mostrarArrayPantalla2(obtenerLongCadenas(arrayString3));
     }
 
 }
