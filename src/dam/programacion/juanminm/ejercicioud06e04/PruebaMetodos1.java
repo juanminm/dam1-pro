@@ -5,8 +5,8 @@
  * métodos.
  *
  *  1. Escribe un método, de nombre mostrarArrayPantalla2, que reciba por
- *     parámetro un array de enteros y muestre sus valores por pantalla separados
- *     por comas.
+ *     parámetro un array de enteros y muestre sus valores por pantalla
+ *     separados por comas.
  *
  *  2. Escribe un método, de nombre obtenerArrayComoString, que reciba un array
  *     de enteros por parámetro y devuelva una cadena de caracteres con su
@@ -16,16 +16,17 @@
  *     enteros por parámetro y lo rellene de forma que contenga tantos números
  *     pares, a partir del cero, como permita su capacidad.
  *
- *  4. Escribe un método, de nombre obtenerSumaArray, que reciba por parámetro un
- *     array de enteros y devuelva la suma de sus elementos.
+ *  4. Escribe un método, de nombre obtenerSumaArray, que reciba por parámetro
+ *     un array de enteros y devuelva la suma de sus elementos.
  *
  *  5. Escribe un método, de nombre arrayPotencias2, que cree un array y lo
  *     rellene con potencias de 2. Las potencias de 2 comenzarán en 2º y el
  *     número total de ellas se recibirá por parámetro. El método devolverá el
  *     array creado.
  *
- *  6. Escribe un método que reciba como parámetro un array de cadenas y devuelva
- *     la cadena resultante de concatenar todas las contenidas en el array.
+ *  6. Escribe un método que reciba como parámetro un array de cadenas y
+ *     devuelva la cadena resultante de concatenar todas las contenidas en el
+ *     array.
  *
  *  7. Escribe un método, de nombre obtenerSumaLongCadArray, que reciba por
  *     parámetro un array de cadenas y devuelva el número total de caracteres de
@@ -55,9 +56,9 @@ package dam.programacion.juanminm.ejercicioud06e04;
 public class PruebaMetodos1 {
 
     /*
-     *  1. Escribe un método, de nombre mostrarArrayPantalla2, que reciba por
-     *     parámetro un array de enteros y muestre sus valores por pantalla
-     *     separados por comas.
+     * 1. Escribe un método, de nombre mostrarArrayPantalla2, que reciba por
+     *    parámetro un array de enteros y muestre sus valores por pantalla
+     *    separados por comas.
      */
     private static void mostrarArrayPantalla2(int[] arrayNum) {
         for (int i = 0; i < arrayNum.length; i++) {
@@ -104,8 +105,8 @@ public class PruebaMetodos1 {
     }
 
     /*
-     *  4. Escribe un método, de nombre obtenerSumaArray, que reciba por
-     *     parámetro un array de enteros y devuelva la suma de sus elementos.
+     * 4. Escribe un método, de nombre obtenerSumaArray, que reciba por
+     *    parámetro un array de enteros y devuelva la suma de sus elementos.
      */
     private static int obtenerSumaArray(int[] arrayNum) {
         int suma = 0;
@@ -119,10 +120,10 @@ public class PruebaMetodos1 {
     }
 
     /*
-     *  5. Escribe un método, de nombre arrayPotencias2, que cree un array y lo
-     *     rellene con potencias de 2. Las potencias de 2 comenzarán en 2º y el
-     *     número total de ellas se recibirá por parámetro. El método devolverá
-     *     el array creado.
+     * 5. Escribe un método, de nombre arrayPotencias2, que cree un array y lo
+     *    rellene con potencias de 2. Las potencias de 2 comenzarán en 2º y el
+     *    número total de ellas se recibirá por parámetro. El método devolverá
+     *    el array creado.
      */
     private static int[] arrayPotencias2(int numeroPotencias) {
         int[] arrayPotencias = new int[numeroPotencias];
@@ -150,9 +151,9 @@ public class PruebaMetodos1 {
     }
 
     /*
-     *  7. Escribe un método, de nombre obtenerSumaLongCadArray, que reciba por
-     *     parámetro un array de cadenas y devuelva el número total de
-     *     caracteres de todas las cadenas del array.
+     * 7. Escribe un método, de nombre obtenerSumaLongCadArray, que reciba por
+     *    parámetro un array de cadenas y devuelva el número total de
+     *    caracteres de todas las cadenas del array.
      */
     private static int obtenerSumaLongCadArray(String[] arrayString) {
         int longitud = 0;
@@ -165,9 +166,9 @@ public class PruebaMetodos1 {
     }
 
     /*
-     *  8. Escribe un método, de nombre obtenerLongCadenas, que reciba por
-     *     parámetro un array de cadenas y devuelva un array de enteros con los
-     *     tamaños de las cadenas contenidas en el array.
+     * 8. Escribe un método, de nombre obtenerLongCadenas, que reciba por
+     *    parámetro un array de cadenas y devuelva un array de enteros con los
+     *    tamaños de las cadenas contenidas en el array.
      */
     private static int[] obtenerLongCadenas(String[] arrayString) {
         int[] longitudCadenas = new int[arrayString.length];
@@ -186,8 +187,7 @@ public class PruebaMetodos1 {
         int[] arrayNum4 = {94, 64, 631, 73, 28};
         int numPotencias = 10;
         String[] arrayString1 = {"El perro de ", "San Roque no", " tiene ",
-            "rabo por", "que Ram", "on Ramirez se lo", " ha cortado", "."
-        };
+            "rabo por", "que Ram", "on Ramirez se lo", " ha cortado", "."};
         String[] arrayString2 = {"En un l", "ugar de la Manc", "ha de ",
             "cuyo nombr", "e no", " quiero a", "cordarme."};
         String[] arrayString3 = {"How often have I said t", "o you that when",
@@ -204,7 +204,8 @@ public class PruebaMetodos1 {
         System.out.printf("%nResultado de completarArray3:%n");
         mostrarArrayPantalla2(arrayNum3);
 
-        System.out.printf("%nResultado de obtenerSumaArray:%n%d%n", obtenerSumaArray(arrayNum4));
+        System.out.printf("%nResultado de obtenerSumaArray:%n%d%n",
+                obtenerSumaArray(arrayNum4));
 
         System.out.printf("%nResultado de arrayPotencias2:%n%s%n",
                 obtenerArrayComoString(arrayPotencias2(numPotencias)));
