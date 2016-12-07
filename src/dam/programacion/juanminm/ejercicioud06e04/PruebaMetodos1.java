@@ -118,11 +118,27 @@ public class PruebaMetodos1 {
         return suma;
     }
 
+    /*
+     *  5. Escribe un método, de nombre arrayPotencias2, que cree un array y lo
+     *     rellene con potencias de 2. Las potencias de 2 comenzarán en 2º y el
+     *     número total de ellas se recibirá por parámetro. El método devolverá
+     *     el array creado.
+     */
+    private static int[] arrayPotencias2(int numeroPotencias) {
+        int[] arrayPotencias = new int[numeroPotencias];
+
+        for (int i = 0; i < arrayPotencias.length; i++) {
+            arrayPotencias[i] = (int) Math.pow(2, 2+i);
+        }
+
+        return arrayPotencias;
+    }
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
         int[] arrayNum3 = new int[30];
         int[] arrayNum4 = {94, 64, 631, 73, 28};
+        int numPotencias = 10;
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -135,6 +151,9 @@ public class PruebaMetodos1 {
         mostrarArrayPantalla2(arrayNum3);
 
         System.out.printf("%nResultado de obtenerSumaArray:%n%d%n", obtenerSumaArray(arrayNum4));
+
+        System.out.printf("%nResultado de arrayPotencias2:%n%s%n",
+                obtenerArrayComoString(arrayPotencias2(numPotencias)));
     }
 
 }
