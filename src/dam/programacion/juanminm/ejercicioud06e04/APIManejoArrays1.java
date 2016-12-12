@@ -42,5 +42,25 @@ public class APIManejoArrays1 {
             System.out.printf("%d ", filas);
         }
         System.out.printf("%n");
+
+        /* b) Declarar y construir un array de 6 caracteres, de nombre arrChar.
+         *    El array almacenará en la primera mitad de las posiciones el
+         *    carácter a y en segunda mitad el carácter b. Mostrar el contenido
+         *    del array.
+         */
+        char[] arrChar = new char[6];
+
+        for (int i = 0; i < arrChar.length; i++) {
+            if (i < 3) {
+                arrChar[i] = 'a';
+            } else {
+                arrChar[i] = 'b';
+            }
+        }
+
+        for (char filas : arrChar) {
+            System.out.printf("%c ", filas);
+        }
+        System.out.printf("%n");
     }
 }
