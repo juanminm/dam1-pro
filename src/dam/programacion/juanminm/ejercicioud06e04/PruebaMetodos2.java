@@ -365,6 +365,36 @@ public class PruebaMetodos2 {
         }
     }
 
+    /*
+     * 18. Escribe un programa que obtenga y muestre por pantalla una matriz de
+     *     enteros con el siguiente aspecto
+     *
+     *     1 2 3 4 5
+     *     1 2 3 4
+     *     1 2 3
+     *     1 2
+     *     1
+     */
+    public static void escaleraInvertidaEnteros(int escalones) {
+        int[][] matrizEscalera = new int[escalones][];
+
+        for (int i = 0; i < matrizEscalera.length; i++) {
+            matrizEscalera[i] = new int[escalones - i];
+
+            for (int j = 0; j < matrizEscalera[i].length; j++) {
+                matrizEscalera[i][j] = j + 1;
+            }
+        }
+
+        for (int[] filas : matrizEscalera) {
+            for (int columnas : filas) {
+                System.out.printf("%d ", columnas);
+            }
+
+            System.out.printf("%n");
+        }
+
+    }
 
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
@@ -398,6 +428,10 @@ public class PruebaMetodos2 {
         System.out.printf("Mostrando las diagonales de la matriz anteriorcon "
                 + "obtenerLaterales:%n");
         mostrarMatrizID(obtenerLaterales(matrizInt3));
+
+        System.out.printf("Mostrnado una matriz escalera de 10 escalones usando"
+                + " escaleraInvertidaEnteros:%n");
+        escaleraInvertidaEnteros(10);
     }
 
 }
