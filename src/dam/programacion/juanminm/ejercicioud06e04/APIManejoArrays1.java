@@ -87,5 +87,6 @@ public class APIManejoArrays1 {
         for (int filas : arrInt2) {
             System.out.printf("%d ", filas);
         }
+        System.out.printf("%n");
     }
 }
