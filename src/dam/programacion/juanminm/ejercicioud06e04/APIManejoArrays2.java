@@ -58,5 +58,74 @@ public class APIManejoArrays2 {
             System.out.printf("%s ", filas);
         }
         System.out.printf("%n");
+
+        /*
+         * d) Ordenar el array arrStr con un comparador que determine que una
+         *    cadena con más caracteres precede a otra que tenga menos. Mostrar
+         *    por pantalla el resultado de la ordenación.
+         */
+        for (int i = 0; i < arrStr.length; i++) {
+            for (int j = i + 1; j < arrStr.length; j++) {
+                if (arrStr[i].length() < arrStr[j].length()) {
+                    String aux = arrStr[i];
+
+                    arrStr[i] = arrStr[j];
+                    arrStr[j] = aux;
+                }
+            }
+        }
+
+        for (String filas : arrStr) {
+            System.out.printf("%s ", filas);
+        }
+        System.out.printf("%n");
+
+        /*
+         * e) Ordenar el array arrStr con un comparador que determine que una
+         *    cadena con más vocales sigue a otra que tenga menos. Mostrar por
+         *    pantalla en resultado de la ordenación.
+         */
+        int contarVocalesStrA;
+        int contarVocalesStrB;
+
+        for (int i = 0; i < arrStr.length; i++) {
+            contarVocalesStrA = 0;
+
+            for (int j = 0; j < arrStr[i].length(); j++) {
+                if (arrStr[i].toLowerCase().charAt(j) == 'a'
+                        || arrStr[i].toLowerCase().charAt(j) == 'e'
+                        || arrStr[i].toLowerCase().charAt(j) == 'i'
+                        || arrStr[i].toLowerCase().charAt(j) == 'o'
+                        || arrStr[i].toLowerCase().charAt(j) == 'u') {
+                    contarVocalesStrA++;
+                }
+            }
+
+            for (int k = i + 1; k < arrStr.length; k++) {
+                contarVocalesStrB = 0;
+
+                for (int l = 0; l < arrStr[k].length(); l++) {
+                    if (arrStr[k].toLowerCase().charAt(l) == 'a'
+                            || arrStr[k].toLowerCase().charAt(l) == 'e'
+                            || arrStr[k].toLowerCase().charAt(l) == 'i'
+                            || arrStr[k].toLowerCase().charAt(l) == 'o'
+                            || arrStr[k].toLowerCase().charAt(l) == 'u') {
+                        contarVocalesStrB++;
+                    }
+                }
+
+                if (contarVocalesStrA > contarVocalesStrB) {
+                    String aux = arrStr[i];
+
+                    arrStr[i] = arrStr[k];
+                    arrStr[k] = aux;
+                }
+            }
+        }
+
+        for (String filas : arrStr) {
+            System.out.printf("%s ", filas);
+        }
+        System.out.printf("%n");
     }
 }
