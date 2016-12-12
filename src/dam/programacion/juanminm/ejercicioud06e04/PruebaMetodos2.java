@@ -160,10 +160,51 @@
  */
 package dam.programacion.juanminm.ejercicioud06e04;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Juan Miguel Navarro Martínez
  */
 public class PruebaMetodos2 {
+
+    /*
+     * 11. Escribe un método, de nombre rellenarMatrizSecuencia2D, que reciba una
+     *     matriz de enteros por parámetro y la rellene para que sus posiciones
+     *     almacenen un valor que se irá incrementando en una unidad por columnas.
+     *     La matriz se rellenará de manera que dos elementos consecutivos según la
+     *     primera dimensión almacenen dos valores también consecutivos. Una matriz
+     *     de 5 elementos en la primera dimensión y 5 en la segunda quedaría como
+     *     sigue:
+     *
+     *     0   5   10  15  20
+     *     1   6   11  16  21
+     *     2   7   12  17  22
+     *     3   8   13  18  23
+     *     4   9   14  19  24
+     */
+    private static void rellenarMatrizSecuencia2D(int[][] matrizInt) {
+        int i = 0;
+        int j = 0;
+        int num = 0;
+
+
+        while(j < matrizInt[i].length) {
+            while (i < matrizInt.length) {
+                matrizInt[i][j] = num++;
+                i++;
+            }
+
+            i = 0;
+            j++;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrizInt1 = new int[5][5];
+
+        rellenarMatrizSecuencia2D(matrizInt1);
+        System.out.println(Arrays.deepToString(matrizInt1));
+    }
 
 }
