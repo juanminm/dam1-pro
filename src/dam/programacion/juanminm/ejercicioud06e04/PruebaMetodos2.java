@@ -236,6 +236,50 @@ public class PruebaMetodos2 {
         return str;
     }
 
+    /*
+     * 14. Escribe un método, de nombre rellenarMatrizAsteriscos, que reciba por
+     *     parámetro un valor entero que especificará el número de filas de
+     *     asteriscos que albergará la matriz. La primera fila contendrá un solo
+     *     asterisco situado en la posición central según la segunda dimensión de la
+     *     matriz. Cada nueva fila contendrá dos asteriscos más y también se
+     *     encontrarán centrados según la segunda dimensión de la matriz. El aspecto
+     *     final que debe presentar la matriz si se recibe un número de filas de
+     *     asteriscos sería el siguiente:
+     *
+     *                 *
+     *              *  *  *
+     *           *  *  *  *  *
+     *        *  *  *  *  *  *  *
+     *     *  *  *  *  *  *  *  *  *
+     */
+    private static String rellenarMatrizAsteriscos(int filas) {
+        int columnas = 2 * filas - 1;
+        String[][] matrizAst = new String[filas][columnas];
+        String str = "";
+
+        for (int i = 0; i < matrizAst.length; i++) {
+            for (int j = 0; j < matrizAst[i].length; j++) {
+                int medio = columnas / 2;
+
+                if (j >= medio - i && j <= medio + i) {
+                    matrizAst[i][j] = "*";
+                } else {
+                    matrizAst[i][j] = " ";
+                }
+            }
+        }
+
+        for (String[] filas2 : matrizAst) {
+            for (String columnas2 : filas2) {
+                str += columnas2 + " ";
+            }
+
+            str += "\n";
+        }
+
+        return str;
+    }
+
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
         int[][] matrizInt2 = {{3, 2, 1}, {9, 3, 7}, {8, 10, 5}};
@@ -250,6 +294,9 @@ public class PruebaMetodos2 {
 
         System.out.printf("Mostrando el resultado de matrizIntComoString:"
                 + "%n%s%n", matrizIntComoString(matrizInt2));
+
+        System.out.printf("Rellenando y mostrando una matriz hecha de"
+                + "astericos:%n%s%n", rellenarMatrizAsteriscos(4));
     }
 
 }
