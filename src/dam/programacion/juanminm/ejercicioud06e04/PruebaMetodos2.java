@@ -297,6 +297,39 @@ public class PruebaMetodos2 {
         return sum;
     }
 
+    /*
+     * 16. Escribe un método, de nombre obtenerDiagonales, que reciba por parámetro
+     *     una matriz de valores enteros y devuelva una matriz con los valores de
+     *     las dos diagonales principales de la matriz recibida.
+     */
+    private static int[][] obtenerDiagonales(int[][] matrizInt) {
+        boolean matrizEsCuadrada = true;
+
+        for (int[] matrizInt1 : matrizInt) {
+            if (matrizInt.length != matrizInt1.length) {
+                matrizEsCuadrada = false;
+            }
+        }
+
+        if (!matrizEsCuadrada) {
+            System.out.printf("La matríz debe de ser cuadrada.");
+            return null;
+        } else {
+            int longitud = matrizInt.length;
+            int[][] matrizDiagonal = new int[longitud][longitud];
+
+            for (int i = 0; i < matrizInt.length; i++) {
+                for (int j = 0; j < matrizInt[i].length; j++) {
+                    if (j == i || j == (matrizInt.length - (i + 1))) {
+                        matrizDiagonal[i][j] = matrizInt[i][j];
+                    }
+                }
+            }
+
+            return matrizDiagonal;
+        }
+    }
+
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
         int[][] matrizInt2 = {{3, 2, 1}, {9, 3, 7}, {8, 10, 5}};
@@ -321,6 +354,10 @@ public class PruebaMetodos2 {
         System.out.printf("La suma del contenido de la matríz...%n%s%n... es: "
                 + "%d%n", matrizIntComoString(matrizInt3),
                 obtenerSumaElementosMatriz(matrizInt3));
+
+        System.out.printf("Mostrando las diagonales de la matriz anteriorcon "
+                + "obtenerDiagonales:%n");
+        mostrarMatrizID(obtenerDiagonales(matrizInt3));
     }
 
 }
