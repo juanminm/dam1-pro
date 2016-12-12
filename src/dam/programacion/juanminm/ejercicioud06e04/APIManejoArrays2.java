@@ -46,5 +46,17 @@ public class APIManejoArrays2 {
             System.out.printf("%s ", filas);
         }
         System.out.printf("%n");
+
+        /*
+         * c) Ordenar el array arrStr alfabéticamente sin distinguir entre
+         *    letras mayúsculas y minúsculas. Mostrar por pantalla el resultado
+         *    de la ordenación.
+         */
+        Arrays.sort(arrStr, String.CASE_INSENSITIVE_ORDER);
+
+        for (String filas : arrStr) {
+            System.out.printf("%s ", filas);
+        }
+        System.out.printf("%n");
     }
 }
