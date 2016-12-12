@@ -200,11 +200,27 @@ public class PruebaMetodos2 {
         }
     }
 
+    /*
+     * 12. Escribe un método, de nombre mostrarMatrizID, que reciba por parámetro un
+     *     array bidimensional (matriz) de enteros y muestre sus elementos por
+     *     pantalla de forma que la primera dimensión de la matriz se corresponda
+     *     con las filas y la segunda con las columnas.
+     */
+    private static void mostrarMatrizID(int[][] matrizInt) {
+        for (int[] filas : matrizInt) {
+            for (int columnas : filas) {
+                System.out.printf("%d ", columnas);
+            }
+            System.out.printf("%n");
+        }
+    }
+
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
 
         rellenarMatrizSecuencia2D(matrizInt1);
-        System.out.println(Arrays.deepToString(matrizInt1));
+
+        mostrarMatrizID(matrizInt1);
     }
 
 }
