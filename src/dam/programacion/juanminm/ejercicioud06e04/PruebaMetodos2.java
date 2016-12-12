@@ -330,6 +330,42 @@ public class PruebaMetodos2 {
         }
     }
 
+    /*
+     * 17. Escribe un método, de nombre obtenerLaterales, que reciba por parámetro
+     *     una matriz de valores enteros y devuelva una matriz con los valores de
+     *     los cuatro laterales -superior, izquierdo, derecho e inferior-, de la
+     *     matriz recibida
+     */
+    private static int[][] obtenerLaterales(int[][] matrizInt) {
+        boolean matrizEsCuadrada = true;
+
+        for (int[] matrizInt1 : matrizInt) {
+            if (matrizInt.length != matrizInt1.length) {
+                matrizEsCuadrada = false;
+            }
+        }
+
+        if (!matrizEsCuadrada) {
+            System.out.printf("La matríz debe de ser cuadrada.");
+            return null;
+        } else {
+            int longitud = matrizInt.length;
+            int[][] matrizDiagonal = new int[longitud][longitud];
+
+            for (int i = 0; i < matrizInt.length; i++) {
+                for (int j = 0; j < matrizInt[i].length; j++) {
+                    if (i == 0 || j == 0 || i == (matrizInt.length - 1)
+                            || j == (matrizInt[i].length - 1)) {
+                        matrizDiagonal[i][j] = matrizInt[i][j];
+                    }
+                }
+            }
+
+            return matrizDiagonal;
+        }
+    }
+
+
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
         int[][] matrizInt2 = {{3, 2, 1}, {9, 3, 7}, {8, 10, 5}};
@@ -358,6 +394,10 @@ public class PruebaMetodos2 {
         System.out.printf("Mostrando las diagonales de la matriz anteriorcon "
                 + "obtenerDiagonales:%n");
         mostrarMatrizID(obtenerDiagonales(matrizInt3));
+
+        System.out.printf("Mostrando las diagonales de la matriz anteriorcon "
+                + "obtenerLaterales:%n");
+        mostrarMatrizID(obtenerLaterales(matrizInt3));
     }
 
 }
