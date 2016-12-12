@@ -169,13 +169,13 @@ import java.util.Arrays;
 public class PruebaMetodos2 {
 
     /*
-     * 11. Escribe un método, de nombre rellenarMatrizSecuencia2D, que reciba una
-     *     matriz de enteros por parámetro y la rellene para que sus posiciones
-     *     almacenen un valor que se irá incrementando en una unidad por columnas.
-     *     La matriz se rellenará de manera que dos elementos consecutivos según la
-     *     primera dimensión almacenen dos valores también consecutivos. Una matriz
-     *     de 5 elementos en la primera dimensión y 5 en la segunda quedaría como
-     *     sigue:
+     * 11. Escribe un método, de nombre rellenarMatrizSecuencia2D, que reciba
+     *     una matriz de enteros por parámetro y la rellene para que sus
+     *     posiciones almacenen un valor que se irá incrementando en una unidad
+     *     por columnas. La matriz se rellenará de manera que dos elementos
+     *     consecutivos según la primera dimensión almacenen dos valores también
+     *     consecutivos. Una matriz de 5 elementos en la primera dimensión y 5
+     *     en la segunda quedaría como sigue:
      *
      *     0   5   10  15  20
      *     1   6   11  16  21
@@ -201,10 +201,10 @@ public class PruebaMetodos2 {
     }
 
     /*
-     * 12. Escribe un método, de nombre mostrarMatrizID, que reciba por parámetro un
-     *     array bidimensional (matriz) de enteros y muestre sus elementos por
-     *     pantalla de forma que la primera dimensión de la matriz se corresponda
-     *     con las filas y la segunda con las columnas.
+     * 12. Escribe un método, de nombre mostrarMatrizID, que reciba por
+     *     parámetro un array bidimensional (matriz) de enteros y muestre sus
+     *     elementos por pantalla de forma que la primera dimensión de la matriz
+     *     se corresponda con las filas y la segunda con las columnas.
      */
     private static void mostrarMatrizID(int[][] matrizInt) {
         for (int[] filas : matrizInt) {
@@ -219,8 +219,8 @@ public class PruebaMetodos2 {
      * 13. Escribe un método, de nombre matrizIntComoString, que reciba por
      *     parámetro un array bidimensional (matriz) de enteros y devuelva una
      *     cadena con la representación textual de la matriz recibida. La cadena
-     *     dispondrá los elementos de la matriz de forma que la primera dimensión se
-     *     corresponda con las filas y la segunda con las columnas.
+     *     dispondrá los elementos de la matriz de forma que la primera
+     *     dimensión se corresponda con las filas y la segunda con las columnas.
      */
     private static String matrizIntComoString(int[][] matrizInt) {
         String str = "";
@@ -240,11 +240,11 @@ public class PruebaMetodos2 {
      * 14. Escribe un método, de nombre rellenarMatrizAsteriscos, que reciba por
      *     parámetro un valor entero que especificará el número de filas de
      *     asteriscos que albergará la matriz. La primera fila contendrá un solo
-     *     asterisco situado en la posición central según la segunda dimensión de la
-     *     matriz. Cada nueva fila contendrá dos asteriscos más y también se
-     *     encontrarán centrados según la segunda dimensión de la matriz. El aspecto
-     *     final que debe presentar la matriz si se recibe un número de filas de
-     *     asteriscos sería el siguiente:
+     *     asterisco situado en la posición central según la segunda dimensión
+     *     de la matriz. Cada nueva fila contendrá dos asteriscos más y también
+     *     se encontrarán centrados según la segunda dimensión de la matriz. El
+     *     aspecto final que debe presentar la matriz si se recibe un número de
+     *     filas de asteriscos sería el siguiente:
      *
      *                 *
      *              *  *  *
@@ -281,10 +281,10 @@ public class PruebaMetodos2 {
     }
 
     /*
-     * 15. Escribe un método, de nombre obtenerSumaElementosMatriz, que reciba por
-     *     parámetro un array bidimensional de números enteros y devuelva la suma de
-     *     todos sus elementos.
-    */
+     * 15. Escribe un método, de nombre obtenerSumaElementosMatriz, que reciba
+     *     por parámetro un array bidimensional de números enteros y devuelva la
+     *     suma de todos sus elementos.
+     */
     private static int obtenerSumaElementosMatriz(int[][] matrizInt) {
         int sum = 0;
 
@@ -298,9 +298,9 @@ public class PruebaMetodos2 {
     }
 
     /*
-     * 16. Escribe un método, de nombre obtenerDiagonales, que reciba por parámetro
-     *     una matriz de valores enteros y devuelva una matriz con los valores de
-     *     las dos diagonales principales de la matriz recibida.
+     * 16. Escribe un método, de nombre obtenerDiagonales, que reciba por
+     *     parámetro una matriz de valores enteros y devuelva una matriz con los
+     *     valores de las dos diagonales principales de la matriz recibida.
      */
     private static int[][] obtenerDiagonales(int[][] matrizInt) {
         boolean matrizEsCuadrada = true;
@@ -331,10 +331,10 @@ public class PruebaMetodos2 {
     }
 
     /*
-     * 17. Escribe un método, de nombre obtenerLaterales, que reciba por parámetro
-     *     una matriz de valores enteros y devuelva una matriz con los valores de
-     *     los cuatro laterales -superior, izquierdo, derecho e inferior-, de la
-     *     matriz recibida
+     * 17. Escribe un método, de nombre obtenerLaterales, que reciba por
+     *     parámetro una matriz de valores enteros y devuelva una matriz con los
+     *     valores de los cuatro laterales -superior, izquierdo, derecho e
+     *     inferior-, de la matriz recibida
      */
     private static int[][] obtenerLaterales(int[][] matrizInt) {
         boolean matrizEsCuadrada = true;
