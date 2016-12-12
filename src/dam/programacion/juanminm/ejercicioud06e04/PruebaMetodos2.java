@@ -280,9 +280,28 @@ public class PruebaMetodos2 {
         return str;
     }
 
+    /*
+     * 15. Escribe un método, de nombre obtenerSumaElementosMatriz, que reciba por
+     *     parámetro un array bidimensional de números enteros y devuelva la suma de
+     *     todos sus elementos.
+    */
+    private static int obtenerSumaElementosMatriz(int[][] matrizInt) {
+        int sum = 0;
+
+        for (int[] filas : matrizInt) {
+            for (int columnas : filas) {
+                sum += columnas;
+            }
+        }
+
+        return sum;
+    }
+
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
         int[][] matrizInt2 = {{3, 2, 1}, {9, 3, 7}, {8, 10, 5}};
+        int[][] matrizInt3 = {{10, 3, 5, 9}, {8, 13, 2, 21}, {7, 8, 5, 15},
+            {14, 23, 29, 8}};
 
 
         System.out.printf("Rellenando matriz entera con"
@@ -298,6 +317,10 @@ public class PruebaMetodos2 {
 
         System.out.printf("Rellenando y mostrando una matriz hecha de"
                 + "astericos:%n%s%n", rellenarMatrizAsteriscos(4));
+
+        System.out.printf("La suma del contenido de la matríz...%n%s%n... es: "
+                + "%d%n", matrizIntComoString(matrizInt3),
+                obtenerSumaElementosMatriz(matrizInt3));
     }
 
 }
