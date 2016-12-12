@@ -20,6 +20,8 @@
  */
 package dam.programacion.juanminm.ejercicioud06e04;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Juan Miguel Navarro Martínez
@@ -32,5 +34,17 @@ public class APIManejoArrays2 {
          *    “peto”, “mar”, “orilla” y “Orihuela”
          */
         String[] arrStr = {"impresora", "peto", "mar", "orilla", "Orihuela"};
+
+        /*
+         * b) Ordenar el array arrStr alfabéticamente teniendo en cuenta que las
+         *    letras mayúsculas figuran en el código Unicode antes que las
+         *    minúsculas. Mostrar por pantalla el resultado de la ordenación.
+         */
+        Arrays.sort(arrStr);
+
+        for (String filas : arrStr) {
+            System.out.printf("%s ", filas);
+        }
+        System.out.printf("%n");
     }
 }
