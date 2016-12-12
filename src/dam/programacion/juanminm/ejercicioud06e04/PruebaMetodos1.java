@@ -49,6 +49,8 @@
  */
 package dam.programacion.juanminm.ejercicioud06e04;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Juan Miguel Navarro Martínez
@@ -180,6 +182,36 @@ public class PruebaMetodos1 {
         return longitudCadenas;
     }
 
+    /*
+     * 9. Escribe un método, de nombre obtenerArrCad5Vocales, que reciba por
+     *    parámetro un array de cadenas y devuelva un array con las que
+     *    contengan las 5 vocales. Para la consideración de un carácter como
+     *    vocal no se tendrá en cuenta si está en mayúsculas o minúsculas.
+     */
+    private static String[] obtenerArrCad5Vocales(String[] arrayString) {
+        String[] arrayCad5Vocales = new String[arrayString.length];
+        int j = 0;
+
+        for (int i = 0; i < arrayCad5Vocales.length && j < arrayString.length;
+                i++) {
+            boolean cincoVocalesDetectadas = false;
+
+            while (j < arrayString.length && !cincoVocalesDetectadas) {
+                if (arrayString[j].toLowerCase().matches(".*a.*") &&
+                        arrayString[j].toLowerCase().matches(".*e.*") &&
+                        arrayString[j].toLowerCase().matches(".*i.*") &&
+                        arrayString[j].toLowerCase().matches(".*o.*") &&
+                        arrayString[j].toLowerCase().matches(".*u.*")) {
+                    arrayCad5Vocales[i] = arrayString[j];
+                    cincoVocalesDetectadas = true;
+                }
+                j++;
+            }
+        }
+
+        return arrayCad5Vocales;
+    }
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
@@ -193,6 +225,8 @@ public class PruebaMetodos1 {
         String[] arrayString3 = {"How often have I said t", "o you that when",
             "you have e", "liminated the impossible", ", whatever ", "remains,",
             " however improbab", "le, must", "be the truth?"};
+        String[] arrayString4 = {"Supercalifragilisticoespialodoso","raton",
+            "murcielago","arco iris"};
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -218,6 +252,9 @@ public class PruebaMetodos1 {
 
         System.out.printf("%nResultado de obtenerLongCadenas:%n");
         mostrarArrayPantalla2(obtenerLongCadenas(arrayString3));
+
+        System.out.printf("%nResultado de obtenerArrCad5Vocales:%n%s%n",
+                Arrays.toString(obtenerArrCad5Vocales(arrayString4)));
     }
 
 }
