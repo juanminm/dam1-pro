@@ -215,8 +215,31 @@ public class PruebaMetodos2 {
         }
     }
 
+    /*
+     * 13. Escribe un método, de nombre matrizIntComoString, que reciba por
+     *     parámetro un array bidimensional (matriz) de enteros y devuelva una
+     *     cadena con la representación textual de la matriz recibida. La cadena
+     *     dispondrá los elementos de la matriz de forma que la primera dimensión se
+     *     corresponda con las filas y la segunda con las columnas.
+     */
+    private static String matrizIntComoString(int[][] matrizInt) {
+        String str = "";
+
+        for (int[] filas : matrizInt) {
+            for (int columnas : filas) {
+                str += columnas + " ";
+            }
+
+            str += "\n";
+        }
+
+        return str;
+    }
+
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
+        int[][] matrizInt2 = {{3, 2, 1}, {9, 3, 7}, {8, 10, 5}};
+
 
         System.out.printf("Rellenando matriz entera con"
                 + "rellenarMatrizSecuencia2D...%n");
@@ -224,6 +247,9 @@ public class PruebaMetodos2 {
 
         System.out.printf("Mostrando la matriz anterior con mostrarMatrizID:");
         mostrarMatrizID(matrizInt1);
+
+        System.out.printf("Mostrando el resultado de matrizIntComoString:"
+                + "%n%s%n", matrizIntComoString(matrizInt2));
     }
 
 }
