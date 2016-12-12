@@ -212,6 +212,38 @@ public class PruebaMetodos1 {
         return arrayCad5Vocales;
     }
 
+    /*
+     * 10. Escribe un método, de nombre obtenerArrayOrdAlfab, que reciba por
+     *     parámetro un array de cadenas de caracteres y las ordene
+     *     alfabéticamente. La ordenación no se verá afectada por la expresión
+     *     de los caracteres expresados en mayúsculas o minúsculas. Es decir,
+     *     las cadenas “ALBACETE”, “antonio”, y “BURGOS” quedarán ordenadas en
+     *     este mismo orden.
+     */
+    private static String[] obtenerArrayOrdAlfab(String[] arrayStr) {
+        String[] arrayOrd = new String[arrayStr.length];
+
+        for (int i = 0; i < arrayOrd.length; i++) {
+            for (int j = i; j < arrayStr.length; j++) {
+                if(arrayOrd[i] == null) {
+                    arrayOrd[i] = arrayStr[j];
+                } else {
+                    int res = arrayOrd[i].compareToIgnoreCase(arrayStr[j]);
+
+                    if (res > 0) {
+                        String tmp = arrayOrd[i];
+                        
+                        arrayOrd[i] = arrayStr[j];
+                        arrayStr[j] = tmp;
+                    }
+                }
+            }
+        }
+
+        return arrayOrd;
+    }
+
+
     public static void main(String[] args) {
         int[] arrayNum1 = {1, 5, 6, 9, 10};
         int[] arrayNum2 = {50, 30, 2, 95, 6};
@@ -227,6 +259,8 @@ public class PruebaMetodos1 {
             " however improbab", "le, must", "be the truth?"};
         String[] arrayString4 = {"Supercalifragilisticoespialodoso","raton",
             "murcielago","arco iris"};
+        String[] arrayString5 = {"Barcelona", "mAyOrca", "AlBaCeTe", "FaZe",
+            "LOL", "RLCS2 Champion", "woofless"};
 
         System.out.printf("Resultado de mostrarArrayPantalla2:%n");
         mostrarArrayPantalla2(arrayNum1);
@@ -255,6 +289,9 @@ public class PruebaMetodos1 {
 
         System.out.printf("%nResultado de obtenerArrCad5Vocales:%n%s%n",
                 Arrays.toString(obtenerArrCad5Vocales(arrayString4)));
+
+        System.out.printf("%nResultado de obtenerArrayOrdAlfab:%n%s%n",
+                Arrays.toString(obtenerArrayOrdAlfab(arrayString5)));
     }
 
 }
