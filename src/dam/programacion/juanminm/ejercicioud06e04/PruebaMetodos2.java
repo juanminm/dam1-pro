@@ -218,8 +218,11 @@ public class PruebaMetodos2 {
     public static void main(String[] args) {
         int[][] matrizInt1 = new int[5][5];
 
+        System.out.printf("Rellenando matriz entera con"
+                + "rellenarMatrizSecuencia2D...%n");
         rellenarMatrizSecuencia2D(matrizInt1);
 
+        System.out.printf("Mostrando la matriz anterior con mostrarMatrizID:");
         mostrarMatrizID(matrizInt1);
     }
 
