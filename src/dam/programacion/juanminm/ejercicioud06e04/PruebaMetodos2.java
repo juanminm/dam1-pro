@@ -289,7 +289,8 @@ public class PruebaMetodos2 {
                 + "rellenarMatrizSecuencia2D...%n");
         rellenarMatrizSecuencia2D(matrizInt1);
 
-        System.out.printf("Mostrando la matriz anterior con mostrarMatrizID:");
+        System.out.printf("Mostrando la matriz anterior conmostrarMatrizID:"
+                + "%n");
         mostrarMatrizID(matrizInt1);
 
         System.out.printf("Mostrando el resultado de matrizIntComoString:"
