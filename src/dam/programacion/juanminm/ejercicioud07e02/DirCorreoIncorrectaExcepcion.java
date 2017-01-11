@@ -6,7 +6,7 @@ package dam.programacion.juanminm.ejercicioud07e02;
  */
 public class DirCorreoIncorrectaExcepcion extends Exception {
     public DirCorreoIncorrectaExcepcion() {
-        super();
+        super("Dirección invalida.");
     }
 
     public DirCorreoIncorrectaExcepcion(String msg) {
