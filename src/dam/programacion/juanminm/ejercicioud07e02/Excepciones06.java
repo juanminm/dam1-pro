@@ -12,7 +12,8 @@ public class Excepciones06 {
         if (direccion.matches(".+@.+\\..+")) {
             System.out.println("Direccion correcta.");
         } else {
-            throw new DirCorreoIncorrectaExcepcion();
+            throw new DirCorreoIncorrectaExcepcion("Dirección de correo \""
+                    + direccion + "\" no válida.");
         }
     }
 
@@ -23,8 +24,7 @@ public class Excepciones06 {
         try {
             enviarMensaje(direccionCorreo);
         } catch (DirCorreoIncorrectaExcepcion e) {
-            System.out.println("Dirección de correo " + direccionCorreo + " no "
-                    + "válida.");
+            System.err.printf("%s%n", e.getMessage());
         }
     }
 }

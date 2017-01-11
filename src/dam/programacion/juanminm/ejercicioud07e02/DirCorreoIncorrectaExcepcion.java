@@ -8,4 +8,8 @@ public class DirCorreoIncorrectaExcepcion extends Exception {
     public DirCorreoIncorrectaExcepcion() {
         super();
     }
+
+    public DirCorreoIncorrectaExcepcion(String msg) {
+        super(msg);
+    }
 }
