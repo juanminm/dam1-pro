@@ -8,6 +8,9 @@ public class Excepciones07 {
     public static void main(String[] args) {
         Corredor corredor = new Corredor(26);
 
+        System.out.printf("Energia inicial del corredor: %d%n",
+                corredor.getEnergia());
+
         corredor.correr();
         corredor.correr();
         corredor.correr();
