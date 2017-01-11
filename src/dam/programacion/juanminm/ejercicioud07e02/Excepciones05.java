@@ -1,3 +1,12 @@
+/*
+ * 5. Escribe un método, de nombre mostrarCadenasArray, que reciba por parámetro
+ *    un array con cadenas de caracteres. El método mostrará por pantalla el
+ *    primer carácter de cada una de las cadenas contenidas en el array.
+ *
+ *    - Se debe evitar que se produzca una excepción NullPointerException si
+ *      alguna de las posiciones del array contiene una referencia no
+ *      inicializada (valor null)
+ */
 package dam.programacion.juanminm.ejercicioud07e02;
 
 /**

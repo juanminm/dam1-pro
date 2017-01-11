@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 3. Indica la salida por pantalla que produciría el siguiente código:
  */
 package dam.programacion.juanminm.ejercicioud07e02;
 

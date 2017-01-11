@@ -1,3 +1,7 @@
+/*
+ * 1. Escribe un programa que lance y capture una excepción de la clase
+ *    Exception
+ */
 package dam.programacion.juanminm.ejercicioud07e02;
 
 /**
