@@ -1,6 +1,7 @@
 package dam.programacion.juanminm.u08.ejercicio03;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -36,6 +37,43 @@ public class Cuentas {
                 cuentaEncontrada = true;
             }
         }
+
+        return cuenta;
+    }
+
+    public Ccuenta buscarCuenta() {
+        int opcion;
+        Scanner scan = new Scanner(System.in);
+        Ccuenta cuenta = null;
+
+        do {
+            System.out.println("Metodos de busqueda:");
+            System.out.println("  1. Por nombre.");
+            System.out.println("  2. Por número de cuenta.");
+            System.out.println("  0. Salir.");
+            System.out.print("\nIntroduzca el metodo: ");
+            opcion = scan.nextInt();
+
+            switch(opcion) {
+                case 1:
+                    System.out.print("\nIntroduzca el nombre del cliente: ");
+                    cuenta = posCuentaNombre(scan.nextLine());
+
+                    break;
+                case 2:
+                    System.out.print("\nIntroduzca el número de cuenta: ");
+                    cuenta = posCuenta(scan.nextLine());
+
+                    break;
+                case 0:
+                    System.out.println("Cancelada la operación.");
+                    break;
+                default:
+                    System.err.println("La opción es incorrecta. Intenta de"
+                            + "nuevo.\n");
+                    break;
+            }
+        } while (opcion != 0 && opcion > 2);
 
         return cuenta;
     }
