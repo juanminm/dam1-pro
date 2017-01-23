@@ -77,4 +77,54 @@ public class Cuentas {
 
         return cuenta;
     }
+
+
+
+    public int nuevaCuenta() {
+        boolean ctrl = true;
+        Scanner scan = new Scanner(System.in);
+        Ccuenta nueva = null;
+
+        do {
+            try {
+                ctrl = true;
+                String nombre;
+                String numero;
+                double saldo;
+                double tipoDeInteres;
+
+                System.out.print("Introduce el nombre: ");
+                nombre = scan.nextLine();
+
+                System.out.print("Introduce el número de cuenta: ");
+                numero = scan.next();
+
+                for (int i = 0; i < listaCuentas.size(); i++) {
+                    if (listaCuentas.get(i).getCuenta().equals(numero)) {
+                        throw new Exception("Cuenta repetida.");
+                    }
+                }
+
+                System.out.print("Introduzca el saldo inicial de la cuenta: ");
+                saldo = scan.nextDouble();
+
+                System.out.print("Introduzca el tipo de interes de la"
+                        + "cuenta: ");
+                tipoDeInteres = scan.nextDouble();
+
+                nueva = new Ccuenta(nombre, numero, saldo,
+                        tipoDeInteres);
+
+                System.out.println("Cuenta creada.");
+                listaCuentas.add(nueva);
+                System.out.println("Cuenta añadida.");
+                total++;
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+                ctrl = false;
+            }
+        } while(!ctrl);
+
+        return listaCuentas.indexOf(nueva);
+    }
 }
