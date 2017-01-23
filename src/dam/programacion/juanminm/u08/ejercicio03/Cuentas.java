@@ -24,4 +24,19 @@ public class Cuentas {
 
         return cuenta;
     }
+
+    private Ccuenta posCuenta(String numcta) {
+        boolean cuentaEncontrada = false;
+        int i = 0;
+        Ccuenta cuenta = null;
+
+        while (!cuentaEncontrada && i < listaCuentas.size()) {
+            if (listaCuentas.get(i).getCuenta().equals(numcta)) {
+                cuenta = listaCuentas.get(i);
+                cuentaEncontrada = true;
+            }
+        }
+
+        return cuenta;
+    }
 }
