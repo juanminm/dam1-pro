@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Cuentas {
     private ArrayList<Ccuenta> listaCuentas = new ArrayList();
-    private int total;
+    private int total = 0;
 
     private Ccuenta posCuentaNombre(String nombre) {
         boolean cuentaEncontrada = false;
