@@ -80,7 +80,7 @@ public class Ccuenta {
         return cuenta;
     }
 
-    public double getSueldo() {
+    public double getSaldo() {
         return saldo;
     }
 

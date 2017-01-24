@@ -185,7 +185,7 @@ public class Cuentas {
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
-        } else if (cuenta.getSueldo() != 0) {
+        } else if (cuenta.getSaldo() != 0) {
             System.out.println("La cuenta aun contiene saldo.");
         } else {
             listaCuentas.remove(cuenta);
