@@ -58,6 +58,7 @@ public class Cuentas {
 
             try {
                 opcion = scan.nextInt();
+                scan.nextLine();
 
                 switch(opcion) {
                     case 1:
