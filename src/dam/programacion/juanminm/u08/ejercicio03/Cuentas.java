@@ -92,10 +92,10 @@ public class Cuentas {
     public int nuevaCuenta() {
         boolean ctrl = true;
         Ccuenta nueva = null;
+        Scanner scan = new Scanner(System.in);
 
         do {
             try {
-                Scanner scan = new Scanner(System.in);
                 ctrl = true;
                 String nombre;
                 String numero;
@@ -134,17 +134,20 @@ public class Cuentas {
             }
         } while(!ctrl);
 
+        System.out.println("\nPulsa ENTER para continuar...");
+        scan.nextLine();
+
         return listaCuentas.indexOf(nueva);
     }
 
     public void modificarCuenta() {
         Ccuenta cuenta = buscarCuenta();
+        Scanner scan = new Scanner(System.in);
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
         } else {
             try {
-                Scanner scan = new Scanner(System.in);
                 System.out.print("¿Modificar el saldo de la cuenta? (s/N):");
 
                 switch(scan.next().toLowerCase()) {
@@ -181,10 +184,14 @@ public class Cuentas {
                 System.out.println(e.getMessage());
             }
         }
+
+        System.out.println("\nPulsa ENTER para continuar...");
+        scan.nextLine();
     }
 
     public void anularCuenta() {
         Ccuenta cuenta = buscarCuenta();
+        Scanner scan = new Scanner(System.in);
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
@@ -193,10 +200,14 @@ public class Cuentas {
         } else {
             listaCuentas.remove(cuenta);
         }
+
+        System.out.println("\nPulsa ENTER para continuar...");
+        scan.nextLine();
     }
 
     public void consultarCuenta() {
         Ccuenta cuenta = buscarCuenta();
+        Scanner scan = new Scanner(System.in);
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
@@ -208,5 +219,8 @@ public class Cuentas {
             System.out.printf("%-19s %f%n", "Tipo de interes",
                     cuenta.getTipoDeInteres());
         }
+
+        System.out.println("\nPulsa ENTER para continuar...");
+        scan.nextLine();
     }
 }
