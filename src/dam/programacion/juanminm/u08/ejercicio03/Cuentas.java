@@ -62,7 +62,8 @@ public class Cuentas {
 
                 switch(opcion) {
                     case 1:
-                        System.out.print("\nIntroduzca el nombre del cliente: ");
+                        System.out.print("\nIntroduzca el nombre del"
+                                + "cliente: ");
                         cuenta = posCuentaNombre(scan.nextLine());
                         break;
                     case 2:
@@ -73,8 +74,8 @@ public class Cuentas {
                         System.out.println("Cancelada la operación.");
                         break;
                     default:
-                        System.err.println("La opción es incorrecta. Intenta de"
-                                + "nuevo.\n");
+                        System.err.println("La opción es incorrecta. Intenta "
+                                + "de nuevo.\n");
                         break;
                 }
             } catch (InputMismatchException e) {
@@ -116,7 +117,7 @@ public class Cuentas {
                 System.out.print("Introduzca el saldo inicial de la cuenta: ");
                 saldo = scan.nextDouble();
 
-                System.out.print("Introduzca el tipo de interes de la"
+                System.out.print("Introduzca el tipo de interes de la "
                         + "cuenta: ");
                 tipoDeInteres = scan.nextDouble();
 
