@@ -132,4 +132,50 @@ public class Cuentas {
 
         return listaCuentas.indexOf(nueva);
     }
+
+    public void modificarCuenta() {
+        Ccuenta cuenta = buscarCuenta();
+        Scanner scan = new Scanner(System.in);
+
+        if (cuenta == null) {
+            System.out.println("La cuenta no existe.");
+        } else {
+            try {
+                System.out.print("¿Modificar el saldo de la cuenta? (s/N):");
+
+                switch(scan.next().toLowerCase()) {
+                    case "s":
+                    case "si":
+                    case "sí":
+                        System.out.print("Introduca la nueva cantidad: ");
+                        cuenta.setSaldo(scan.nextDouble());
+                        break;
+                    case "n":
+                    case "no":
+                    case "":
+                        break;
+                    default:
+                        throw new Exception("Opción invalida.");
+                }
+
+                System.out.print("¿Modificar el tipo de interés? (s/N):");
+                switch(scan.next().toLowerCase()) {
+                    case "s":
+                    case "si":
+                    case "sí":
+                        System.out.print("Introduca la nueva cantidad: ");
+                        cuenta.setTipoDeInteres(scan.nextDouble());
+                        break;
+                    case "n":
+                    case "no":
+                    case "":
+                        break;
+                    default:
+                        throw new Exception("Opción invalida.");
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }
