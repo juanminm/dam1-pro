@@ -178,4 +178,17 @@ public class Cuentas {
             }
         }
     }
+
+    public void anularCuenta() {
+        Ccuenta cuenta = buscarCuenta();
+        Scanner scan = new Scanner(System.in);
+
+        if (cuenta == null) {
+            System.out.println("La cuenta no existe.");
+        } else if (cuenta.getSueldo() != 0) {
+            System.out.println("La cuenta aun contiene saldo.");
+        } else {
+            listaCuentas.remove(cuenta);
+        }
+    }
 }
