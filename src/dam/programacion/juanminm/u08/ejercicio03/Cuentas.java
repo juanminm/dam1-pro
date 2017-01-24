@@ -181,7 +181,6 @@ public class Cuentas {
 
     public void anularCuenta() {
         Ccuenta cuenta = buscarCuenta();
-        Scanner scan = new Scanner(System.in);
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
@@ -194,7 +193,6 @@ public class Cuentas {
 
     public void consultarCuenta() {
         Ccuenta cuenta = buscarCuenta();
-        Scanner scan = new Scanner(System.in);
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
