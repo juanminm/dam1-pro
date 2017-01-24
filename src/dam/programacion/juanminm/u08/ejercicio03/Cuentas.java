@@ -87,11 +87,11 @@ public class Cuentas {
 
     public int nuevaCuenta() {
         boolean ctrl = true;
-        Scanner scan = new Scanner(System.in);
         Ccuenta nueva = null;
 
         do {
             try {
+                Scanner scan = new Scanner(System.in);
                 ctrl = true;
                 String nombre;
                 String numero;
@@ -135,12 +135,12 @@ public class Cuentas {
 
     public void modificarCuenta() {
         Ccuenta cuenta = buscarCuenta();
-        Scanner scan = new Scanner(System.in);
 
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
         } else {
             try {
+                Scanner scan = new Scanner(System.in);
                 System.out.print("¿Modificar el saldo de la cuenta? (s/N):");
 
                 switch(scan.next().toLowerCase()) {
