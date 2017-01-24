@@ -201,10 +201,12 @@ public class Cuentas {
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
         } else {
-            System.out.printf("%-19s %s", "Cliente", cuenta.getNombre());
-            System.out.printf("%-19s %s", "Número de cuenta", cuenta.getCuenta());
-            System.out.printf("%-19s %f", "Saldo", cuenta.getSaldo());
-            System.out.printf("%-19s %f", "Tipo de interes", cuenta.getTipoDeInteres());
+            System.out.printf("%-19s %s%n", "Cliente", cuenta.getNombre());
+            System.out.printf("%-19s %s%n", "Número de cuenta",
+                    cuenta.getCuenta());
+            System.out.printf("%-19s %f%n", "Saldo", cuenta.getSaldo());
+            System.out.printf("%-19s %f%n", "Tipo de interes",
+                    cuenta.getTipoDeInteres());
         }
     }
 }
