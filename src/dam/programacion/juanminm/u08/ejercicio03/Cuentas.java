@@ -22,6 +22,7 @@ public class Cuentas {
                 cuenta = listaCuentas.get(i);
                 cuentaEncontrada = true;
             }
+            i++;
         }
 
         return cuenta;
@@ -37,6 +38,7 @@ public class Cuentas {
                 cuenta = listaCuentas.get(i);
                 cuentaEncontrada = true;
             }
+            i++;
         }
 
         return cuenta;
