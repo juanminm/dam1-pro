@@ -191,4 +191,18 @@ public class Cuentas {
             listaCuentas.remove(cuenta);
         }
     }
+
+    public void consultarCuenta() {
+        Ccuenta cuenta = buscarCuenta();
+        Scanner scan = new Scanner(System.in);
+
+        if (cuenta == null) {
+            System.out.println("La cuenta no existe.");
+        } else {
+            System.out.printf("%-19s %s", "Cliente", cuenta.getNombre());
+            System.out.printf("%-19s %s", "Número de cuenta", cuenta.getCuenta());
+            System.out.printf("%-19s %f", "Saldo", cuenta.getSaldo());
+            System.out.printf("%-19s %f", "Tipo de interes", cuenta.getTipoDeInteres());
+        }
+    }
 }
