@@ -210,15 +210,18 @@ public class Cuentas {
         if (cuenta == null) {
             System.out.println("La cuenta no existe.");
         } else {
-            System.out.printf("%-19s %s%n", "Cliente", cuenta.getNombre());
-            System.out.printf("%-19s %s%n", "Número de cuenta",
-                    cuenta.getCuenta());
-            System.out.printf("%-19s %f%n", "Saldo", cuenta.getSaldo());
-            System.out.printf("%-19s %f%n", "Tipo de interes",
-                    cuenta.getTipoDeInteres());
+            verCuenta(cuenta);
         }
 
         System.out.println("\nPulsa ENTER para continuar...");
         scan.nextLine();
+    }
+
+    private void verCuenta(Ccuenta cta) {
+        System.out.printf("%-19s %s%n", "Cliente", cta.getNombre());
+        System.out.printf("%-19s %s%n", "Número de cuenta", cta.getCuenta());
+        System.out.printf("%-19s %f%n", "Saldo", cta.getSaldo());
+        System.out.printf("%-19s %f%n", "Tipo de interes",
+                cta.getTipoDeInteres());
     }
 }
