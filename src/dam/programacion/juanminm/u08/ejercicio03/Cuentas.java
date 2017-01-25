@@ -224,4 +224,19 @@ public class Cuentas {
         System.out.printf("%-19s %f%n", "Tipo de interes",
                 cta.getTipoDeInteres());
     }
+
+    public void visualizarCuentas() {
+        Scanner scan = new Scanner(System.in);
+
+        for (int i = 0; i < listaCuentas.size(); i++) {
+            System.out.printf("%d) %s%n", i, listaCuentas.get(i).getCuenta());
+            System.out.printf("   Nombre: %s%n", listaCuentas.get(i).getNombre());
+            System.out.printf("   Saldo: %.2f%n", listaCuentas.get(i).getSaldo());
+            System.out.printf("   Interes: %.2f%%%n",
+                    listaCuentas.get(i).getTipoDeInteres());
+        }
+
+        System.out.println("\nPulsa ENTER para continuar...");
+        scan.nextLine();
+    }
 }
