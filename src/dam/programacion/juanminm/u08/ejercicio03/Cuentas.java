@@ -88,7 +88,7 @@ public class Cuentas {
     }
 
     public int nuevaCuenta() {
-        boolean ctrl = true;
+        boolean ctrl;
         Ccuenta nueva = null;
         Scanner scan = new Scanner(System.in);
 
