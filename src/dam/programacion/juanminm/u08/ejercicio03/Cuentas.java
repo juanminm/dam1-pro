@@ -87,8 +87,6 @@ public class Cuentas {
         return cuenta;
     }
 
-
-
     public int nuevaCuenta() {
         boolean ctrl = true;
         Ccuenta nueva = null;
