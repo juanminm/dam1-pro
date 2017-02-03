@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dam.programacion.juanminm.u09.ejercicio01.programa04;
 
 /**
@@ -51,10 +46,6 @@ public class Coche {
     }
 
     protected void cambiaMarcha(int nuevaMarcha) {
-        if (nuevaMarcha < 0) {
-            System.err.println("La marcha no puede ser negativa.");
-        } else {
-            marcha = nuevaMarcha;
-        }
+        marcha = nuevaMarcha;
     }
 }
