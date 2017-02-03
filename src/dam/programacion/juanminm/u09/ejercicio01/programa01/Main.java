@@ -18,13 +18,13 @@
  *       por pantalla, modifique su fecha y hora y lo vuelva a mostrar por
  *       pantalla.
  */
-package dam.programacion.juanminm.u09.ejercicio01;
+package dam.programacion.juanminm.u09.ejercicio01.programa01;
 
 /**
  *
  * @author Juam Miguel Navarro Martínez
  */
-public class Programa01 {
+public class Main {
     public static void main(String[] args) {
         String asignatura = "Programación";
         String aula = "Aula I5";

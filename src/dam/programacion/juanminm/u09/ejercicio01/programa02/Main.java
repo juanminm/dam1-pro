@@ -40,13 +40,13 @@
  *
  *   d) Muestra la información del polígono por pantalla.
  */
-package dam.programacion.juanminm.u09.ejercicio01;
+package dam.programacion.juanminm.u09.ejercicio01.programa02;
 
 /**
  *
  * @author Juan Miguel Navarro Martínez
  */
-public class Programa02 {
+public class Main {
     public static void main(String[] args) {
         Punto punto1 = new Punto(0, 0);
         Punto punto2 = new Punto(2, 0);
