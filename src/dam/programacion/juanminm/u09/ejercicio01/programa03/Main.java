@@ -160,7 +160,76 @@ public class Main {
         System.out.println(listaMultimedia.get(posObjeto).toString());
     }
 
+    public static void pruebaClaseDisco() {
+        ListaMultimedia listaMultimedia = new ListaMultimedia(10);
+        Scanner scan = new Scanner(System.in);
+        boolean encontrado = false;
+        int posObjeto = 0;
+
+        for (int i = 0; i < 3; i++) {
+            Disco disco;
+            String titulo;
+            String autor;
+            int duracion;
+            Pelicula.Formato formato;
+            String genero;
+
+            System.out.println("Pelicula nº " + (i + 1));
+            System.out.print("  Introduzca el titulo: ");
+            titulo = scan.nextLine();
+
+            System.out.print("  Introduzca el autor: ");
+            autor = scan.nextLine();
+
+            System.out.print("  Duración del disco (minutos): ");
+            duracion = scan.nextInt();
+            scan.nextLine();
+
+            System.out.println("  Formato del disco. Formatos soportados:");
+
+            int contador = 1;
+            for(Pelicula.Formato soportado : Pelicula.Formato.values()) {
+                System.out.print(soportado.getValue() + " ");
+                contador++;
+
+                if (contador > 5) {
+                    System.out.println();
+                    contador = 1;
+                }
+            }
+            System.out.print("\n: ");
+            formato = Pelicula.Formato.valueOf(scan.next().toUpperCase());
+            scan.nextLine();
+
+            System.out.print("Genero: ");
+            genero = scan.nextLine();
+
+            disco = new Disco(titulo, autor, duracion,
+                    formato, genero);
+
+            listaMultimedia.add(disco);
+        }
+
+        System.out.println(listaMultimedia.toString());
+
+        Disco discoABuscar = new Disco("Star Wars", "George Lucas", 0,
+                null, null);
+
+        while (posObjeto < listaMultimedia.size() && !encontrado) {
+            if (discoABuscar.equals(listaMultimedia.get(posObjeto))) {
+                encontrado = true;
+            }
+
+            posObjeto++;
+        }
+
+        System.out.println("Disco " + posObjeto);
+        System.out.println(listaMultimedia.get(posObjeto).toString());
+    }
+
     public static void main(String[] args) {
         pruebaClasePelicula();
+
+        pruebaClaseDisco();
     }
 }
