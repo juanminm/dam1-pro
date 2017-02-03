@@ -70,10 +70,10 @@ public class Main {
         lista.add(pelicula3);
 
         System.out.printf("Lista multimedia:%n %s%n", lista.toString());
-        System.out.printf("Duración total: %d", calcularDuracionTotal(lista));
-        System.out.printf("Hay %d disco(s) de genero Rock",
+        System.out.printf("Duración total: %d%n", calcularDuracionTotal(lista));
+        System.out.printf("Hay %d disco(s) de genero Rock.%n",
                 contarDiscosRock(lista));
-        System.out.printf("Hay %d peliculas sin actriz principal",
+        System.out.printf("Hay %d peliculas sin actriz principal.%n",
                 contarPeliculasSinActriz(lista));
     }
 }
