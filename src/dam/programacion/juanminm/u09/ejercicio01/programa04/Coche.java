@@ -19,6 +19,10 @@ public class Coche {
         return matricula;
     }
 
+    public int getMarcha() {
+        return marcha;
+    }
+
     public double getVelocidad() {
         return velocidad;
     }
