@@ -7,6 +7,7 @@ import java.io.Serializable;
  * @author Juan Miguel Navarro Martínez
  */
 public class Agenda implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String nombre;
     private String direccion;
     private long telefono;
