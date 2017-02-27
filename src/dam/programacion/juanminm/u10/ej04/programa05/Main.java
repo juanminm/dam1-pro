@@ -20,8 +20,8 @@ import java.util.Scanner;
  */
 public class Main {
 
-    private static Pelicula crearPelicula(String titulo, String autor, int duracion,
-            Multimedia.Formato formato) {
+    private static Pelicula crearPelicula(String titulo, String autor,
+            int duracion, Multimedia.Formato formato) {
         Pelicula pelicula;
         String actor;
         String actriz;
