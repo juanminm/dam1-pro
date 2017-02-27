@@ -121,7 +121,7 @@ public class Main {
                         break;
                 }
 
-                System.out.print("¿Crear un nuevo registro multimedia (C) o "
+                System.out.print("¿Crear un nuevo registro multimedia (c) o "
                         + "finalizar (F)? ");
 
                 switch(scan.nextLine().toLowerCase()) {
