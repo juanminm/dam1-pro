@@ -1,13 +1,6 @@
 /*
- * 3.- Crea un programa o método que escriba registros de una agenda en el
- * fichero de datos agenda.dat
- *
- * Los datos de la agenda son:
- *
- *   String nombre
- *   String direccion
- *   long telefono
- *   String email
+ * 3. - Crea un programa o método que lea los registros contenidos en el fichero
+ * agendaObjecto.dat y los muestre por pantalla.
  */
 package dam.programacion.juanminm.u10.ej04.programa03;
 

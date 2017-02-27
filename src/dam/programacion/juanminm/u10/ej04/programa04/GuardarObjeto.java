@@ -1,6 +1,6 @@
 /*
- * 2. - Crea un programa o método que permita al usuario introducir datos como
- * objetos de la clase y se guarden en el fichero de datos agendaObject.dat
+ * 4. - Sobre el mismo programa, modifícalo para que se puedan añadir objetos al
+ * fichero ya creado.
  */
 package dam.programacion.juanminm.u10.ej04.programa04;
 
