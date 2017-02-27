@@ -125,9 +125,11 @@ public class Main {
                         + "finalizar (F)? ");
 
                 switch(scan.nextLine().toLowerCase()) {
-                    case "C":
+                    case "c":
+                        break;
+                    case "f":
+                    case "":
                         terminar = true;
-                    case "F":
                         break;
                     default:
                         System.out.println("Opción invalida. Terminando...");
