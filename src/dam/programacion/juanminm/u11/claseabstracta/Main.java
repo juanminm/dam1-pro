@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dam.programacion.juanminm.u11.claseabstracta01;
+package dam.programacion.juanminm.u11.claseabstracta;
 
 /**
  *

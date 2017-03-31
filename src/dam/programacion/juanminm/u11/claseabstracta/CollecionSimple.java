@@ -1,4 +1,4 @@
-package dam.programacion.juanminm.u11.claseabstracta01;
+package dam.programacion.juanminm.u11.claseabstracta;
 
 import java.util.LinkedList;
 
