@@ -13,7 +13,7 @@ package dam.programacion.juanminm.u13.calculadora;
 public class Calculadora extends javax.swing.JFrame {
 
     private float mem1;
-    private char operatorSymbol;
+    private int operatorSymbol = -1;
     private boolean isStoredValue = false;
     private boolean isResultValue = false;
 
@@ -367,19 +367,27 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_clearKeyActionPerformed
 
     private void plusKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusKeyActionPerformed
-        setOperatorSymbol('+');
+        operatorSymbol = 0;
+
+        storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_plusKeyActionPerformed
 
     private void minusKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusKeyActionPerformed
-        setOperatorSymbol('-');
+        operatorSymbol = 1;
+
+        storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_minusKeyActionPerformed
 
     private void productKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productKeyActionPerformed
-        setOperatorSymbol('x');
+        operatorSymbol = 2;
+
+        storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_productKeyActionPerformed
 
     private void divisionKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionKeyActionPerformed
-        setOperatorSymbol('/');
+        operatorSymbol = 3;
+
+        storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_divisionKeyActionPerformed
 
     private void convertSignKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertSignKeyActionPerformed
@@ -427,11 +435,9 @@ public class Calculadora extends javax.swing.JFrame {
         isStoredValue = false;
     }
 
-    private void setOperatorSymbol(char c) {
-        operatorSymbol = c;
-
+    private void storeValue(float f) {
         if (!isStoredValue) {
-            mem1 = Float.parseFloat(screenOutput.getText());
+            mem1 = f;
             isStoredValue = true;
         }
     }
@@ -440,21 +446,22 @@ public class Calculadora extends javax.swing.JFrame {
         try {
             float res = mem1;
             switch (operatorSymbol) {
-                case '+':
+                case 0:
                     res += mem2;
                     break;
-                case '-':
+                case 1:
                     res -= mem2;
                     break;
-                case 'x':
+                case 2:
                     res *= mem2;
                     break;
-                case '/':
+                case 3:
                     res /= mem2;
             }
 
             screenOutput.setText(Float.toString(res));
             isResultValue = true;
+            operatorSymbol = -1;
 
             return String.valueOf(res);
         } catch (ArithmeticException e) {
