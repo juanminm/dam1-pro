@@ -396,12 +396,7 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_convertSignKeyActionPerformed
 
     private void equalKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalKeyActionPerformed
-        if (isStoredValue) {
-            screenOutput.setText(getResult(0));
-        } else {
-            screenOutput.setText(getResult(Float.parseFloat(
-                    screenOutput.getText())));
-        }
+        calculate();
     }//GEN-LAST:event_equalKeyActionPerformed
 
     private void appendToScreen(String str) {
@@ -433,6 +428,15 @@ public class Calculadora extends javax.swing.JFrame {
         if (!isStoredValue) {
             mem1 = f;
             isStoredValue = true;
+        }
+    }
+
+    private void calculate() {
+        if (isStoredValue) {
+            screenOutput.setText(getResult(0));
+        } else {
+            screenOutput.setText(getResult(Float.parseFloat(
+                    screenOutput.getText())));
         }
     }
 
