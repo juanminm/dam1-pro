@@ -8,6 +8,7 @@ public class Calculadora extends javax.swing.JFrame {
 
     private float mem1;
     private int operatorSymbol = -1;
+    private boolean isMem1Stored = false;
     private boolean isStoredValue = false;
     private boolean isResultValue = false;
 
@@ -361,24 +362,40 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_clearKeyActionPerformed
 
     private void plusKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusKeyActionPerformed
+        if (isMem1Stored && !isStoredValue) {
+            calculate();
+        }
+
         operatorSymbol = 0;
 
         storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_plusKeyActionPerformed
 
     private void minusKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusKeyActionPerformed
+        if (isMem1Stored && !isStoredValue) {
+            calculate();
+        }
+
         operatorSymbol = 1;
 
         storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_minusKeyActionPerformed
 
     private void productKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productKeyActionPerformed
+        if (isMem1Stored && !isStoredValue) {
+            calculate();
+        }
+
         operatorSymbol = 2;
 
         storeValue(Float.valueOf(screenOutput.getText()));
     }//GEN-LAST:event_productKeyActionPerformed
 
     private void divisionKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionKeyActionPerformed
+        if (isMem1Stored && !isStoredValue) {
+            calculate();
+        }
+
         operatorSymbol = 3;
 
         storeValue(Float.valueOf(screenOutput.getText()));
@@ -397,6 +414,7 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void equalKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalKeyActionPerformed
         calculate();
+        isMem1Stored = false;
     }//GEN-LAST:event_equalKeyActionPerformed
 
     private void appendToScreen(String str) {
@@ -427,6 +445,7 @@ public class Calculadora extends javax.swing.JFrame {
     private void storeValue(float f) {
         if (!isStoredValue) {
             mem1 = f;
+            isMem1Stored = true;
             isStoredValue = true;
         }
     }
