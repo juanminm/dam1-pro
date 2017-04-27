@@ -476,7 +476,6 @@ public class Calculadora extends javax.swing.JFrame {
                     res /= mem2;
             }
 
-            screenOutput.setText(Float.toString(res));
             isResultValue = true;
             operatorSymbol = -1;
 
