@@ -423,7 +423,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         if (screenOut.equals("ERR") || screenOut.equals("0")
                 || screenOut.equals("-0") || isStoredValue || isResultValue) {
-            if (screenOut.startsWith("-") && !isStoredValue) {
+            if (screenOut.startsWith("-") && !(isStoredValue || isResultValue)) {
                 result += "-";
             }
 
