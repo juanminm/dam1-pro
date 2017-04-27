@@ -383,15 +383,13 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_divisionKeyActionPerformed
 
     private void convertSignKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertSignKeyActionPerformed
-        if (isStoredValue) {
-            screenOutput.setText("-0");
+        float num = Float.parseFloat(screenOutput.getText());
+
+        if (isStoredValue || num == 0) {
+            screenOutput.setText("0");
             isStoredValue = false;
         } else {
-            if (screenOutput.getText().matches("\\d+(?:\\.\\d*)?")) {
-                screenOutput.setText("-" + screenOutput.getText());
-            } else {
-                screenOutput.setText(screenOutput.getText().substring(1));
-            }
+            screenOutput.setText(String.valueOf(-num));
         }
     }//GEN-LAST:event_convertSignKeyActionPerformed
 
